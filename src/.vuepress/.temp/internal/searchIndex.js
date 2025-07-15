@@ -7,6 +7,13 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "گرفتن لیست استان‌ها و شهرها",
+    "headers": [],
+    "path": "/ProvinceAndCitiesList/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "پرداخت مستقیم",
     "headers": [
       {
@@ -89,13 +96,6 @@ export const SEARCH_INDEX = [
       }
     ],
     "path": "/Connections/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "گرفتن لیست استان‌ها و شهرها",
-    "headers": [],
-    "path": "/ProvinceAndCitiesList/",
     "pathLocale": "/",
     "extraFields": []
   },

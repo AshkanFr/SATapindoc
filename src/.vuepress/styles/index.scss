@@ -1,12 +1,5 @@
 @import "./navbar.scss";
 
-@font-face {
-  font-family: "IRANSansX",sans-serif;
-  src: url("/fonts/irsans.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 html {
   direction: rtl;
   text-align: right;
@@ -73,7 +66,6 @@ div[vp-content] {
   color: red
 }
 
-
 .badge {
   margin-right: 1rem;
   padding: 8px 10px 3px;
@@ -100,7 +92,6 @@ div[vp-content] {
   background-color: #e74c3c;
 }
 
-
 table {
   width: 100% !important;
   margin: 2rem auto;
@@ -114,7 +105,6 @@ table {
   .right-section {
     flex: 1;
     width: 60%;
-    // width: 50%;
 
     .language-text {
       background-color: black;
@@ -150,7 +140,6 @@ table {
       text-align: left;
     }
 
-
     .language-text {
       background-color: black;
       border-radius: 15px;
@@ -166,7 +155,6 @@ table {
     }
   }
 }
-
 
 .warning-box {
   margin-bottom: 1rem;
@@ -198,3 +186,13 @@ table {
   background-color: #555;
 }
 
+/* ⬇️⬇️⬇️ اضافه‌شده برای جبران ارتفاع navbar در اسکرول انکرها */
+h2::before,
+h3::before,
+h4::before {
+  content: "";
+  display: block;
+  height: 100px; /* بستگی به ارتفاع دقیق navbar داره */
+  margin-top: -100px;
+  visibility: hidden;
+}
