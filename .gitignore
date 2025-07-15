@@ -28,5 +28,5 @@ yarn-error.log*
 Thumbs.db
 
 # Optional: lock files (if you want to ignore package-lock or yarn.lock, but usually you commit these)
-# package-lock.json
+package-lock.json
 # yarn.lock
