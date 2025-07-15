@@ -1,0 +1,21 @@
+.vp-navbar .vp-navbar-search {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.vp-navbar .vp-navbar-search input[type="search"] {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search-box {
+  width: 30rem;
+}
+.search-box  input[type="search"] {
+  border: 1px solid #3FBA84;
+  color: #3FBA84;
+  width: 100%;
+  margin: 0 auto;
+}
