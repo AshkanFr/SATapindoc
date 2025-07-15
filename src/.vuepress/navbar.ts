@@ -14,8 +14,8 @@ export default navbar([
         link: "/Connections/",
     },
 
-    {text: "'لیست استان‌ها به همراه شهرها",
-        link: "/ProvinceList/",
+    {text: " استان‌ها و شهرها",
+        link: "/ProvinceAndCitiesList/",
     },
     
     {

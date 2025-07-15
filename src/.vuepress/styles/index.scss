@@ -1,5 +1,12 @@
 @import "./navbar.scss";
 
+@font-face {
+  font-family: "IRANSansX",sans-serif;
+  src: url("/fonts/irsans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 html {
   direction: rtl;
   text-align: right;

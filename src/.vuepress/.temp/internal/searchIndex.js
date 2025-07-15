@@ -7,28 +7,6 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
-    "title": "ارتباطات",
-    "headers": [
-      {
-        "level": 2,
-        "title": "ارتباطات",
-        "slug": "ارتباطات",
-        "link": "#ارتباطات",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "ارسال اطلاعات",
-        "slug": "ارسال-اطلاعات",
-        "link": "#ارسال-اطلاعات",
-        "children": []
-      }
-    ],
-    "path": "/Connections/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "پرداخت مستقیم",
     "headers": [
       {
@@ -93,24 +71,31 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
-    "title": "گرفتن لیست استان‌ها و شهرها",
+    "title": "ارتباطات",
     "headers": [
       {
         "level": 2,
-        "title": "گرفتن لیست استان‌ها و شهرها",
-        "slug": "گرفتن-لیست-استان‌ها-و-شهرها",
-        "link": "#گرفتن-لیست-استان‌ها-و-شهرها",
+        "title": "ارتباطات",
+        "slug": "ارتباطات",
+        "link": "#ارتباطات",
         "children": []
       },
       {
         "level": 2,
-        "title": "گرفتن لیست‌ استان‌ها و شهر‌ها",
-        "slug": "گرفتن-لیست‌-استان‌ها-و-شهر‌ها",
-        "link": "#گرفتن-لیست‌-استان‌ها-و-شهر‌ها",
+        "title": "ارسال اطلاعات",
+        "slug": "ارسال-اطلاعات",
+        "link": "#ارسال-اطلاعات",
         "children": []
       }
     ],
-    "path": "/ProvinceList/",
+    "path": "/Connections/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "گرفتن لیست استان‌ها و شهرها",
+    "headers": [],
+    "path": "/ProvinceAndCitiesList/",
     "pathLocale": "/",
     "extraFields": []
   },

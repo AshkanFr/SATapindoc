@@ -14,8 +14,22 @@ export default sidebar([
         text: "تماس با ما",
         link: "/ContactUs/",
     },
-    {   text:"لیست گرفتن استان ها و شهر ها ",
-        link:"/ProvinceList/",
+    {   text: " استان‌ها و شهرها ",
+        collapsible: true,
+        children: [
+            {
+                text: "گرفتن لیست استان‌ها و شهرها",
+                link: "/ProvinceAndCitiesList/#getProvinceAndCitiesList"
+            },
+            {
+                text: "گرفتن لیست استان‌ها ",
+                link: "/ProvinceAndCitiesList/#getProvinceList"
+            },
+            {
+                text: "گرفتن لیست شهرها ",
+                link: "/ProvinceAndCitiesList/#getCitiesList"
+            },
+        ],
 
     },
 ]);
