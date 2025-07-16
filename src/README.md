@@ -11,8 +11,6 @@ actions:
     link: /contact/
     type: secondary
 features:
-  - title: سریع و خشن
-    details:  نمیدونم چرا اینو نوشتم 
   - title: ساده و سریع
     details: مستندات کامل و قابل فهم برای توسعه‌دهندگان.
   - title: قابل توسعه

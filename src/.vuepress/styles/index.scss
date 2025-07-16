@@ -1,4 +1,13 @@
+@font-face {
+  font-family: 'BYekan';
+  src: url('/fonts/BYekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "./navbar.scss";
+
 
 html {
   direction: rtl;
@@ -186,13 +195,17 @@ table {
   background-color: #555;
 }
 
-/* ⬇️⬇️⬇️ اضافه‌شده برای جبران ارتفاع navbar در اسکرول انکرها */
+//navbar-anchor
 h2::before,
 h3::before,
 h4::before {
   content: "";
   display: block;
-  height: 100px; /* بستگی به ارتفاع دقیق navbar داره */
+  height: 100px; 
   margin-top: -100px;
   visibility: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, div, li, a {
+  font-family: "BYekan", sans-serif !important;
 }

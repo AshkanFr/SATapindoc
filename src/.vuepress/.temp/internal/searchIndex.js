@@ -7,9 +7,24 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
-    "title": "گرفتن لیست استان‌ها و شهرها",
-    "headers": [],
-    "path": "/ProvinceAndCitiesList/",
+    "title": "ارتباطات",
+    "headers": [
+      {
+        "level": 2,
+        "title": "ارتباطات",
+        "slug": "ارتباطات",
+        "link": "#ارتباطات",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "ارسال اطلاعات",
+        "slug": "ارسال-اطلاعات",
+        "link": "#ارسال-اطلاعات",
+        "children": []
+      }
+    ],
+    "path": "/Connections/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -78,24 +93,16 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
-    "title": "ارتباطات",
-    "headers": [
-      {
-        "level": 2,
-        "title": "ارتباطات",
-        "slug": "ارتباطات",
-        "link": "#ارتباطات",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "ارسال اطلاعات",
-        "slug": "ارسال-اطلاعات",
-        "link": "#ارسال-اطلاعات",
-        "children": []
-      }
-    ],
-    "path": "/Connections/",
+    "title": "گرفتن لیست استان‌ها و شهرها",
+    "headers": [],
+    "path": "/ProvinceAndCitiesList/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "گرفتن لیست فروشگاه‌ها",
+    "headers": [],
+    "path": "/Shops/",
     "pathLocale": "/",
     "extraFields": []
   },
