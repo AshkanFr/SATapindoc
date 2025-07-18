@@ -1,13 +1,13 @@
-import { Layout, NotFound, injectDarkMode, setupDarkMode, setupSidebarItems, scrollPromise } from "/Users/sarinaslaptop/Desktop/SATapindoc/node_modules/vuepress-theme-hope/lib/bundle/exports/base.js";
+import { Layout, NotFound, injectDarkMode, setupDarkMode, setupSidebarItems, scrollPromise } from "/Users/ashkan/Desktop/SATapindoc/node_modules/vuepress-theme-hope/lib/bundle/exports/base.js";
 
-import { defineCatalogInfoGetter } from "/Users/sarinaslaptop/Desktop/SATapindoc/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
+import { defineCatalogInfoGetter } from "/Users/ashkan/Desktop/SATapindoc/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
 import { h } from "vue"
 import { resolveComponent } from "vue"
 
-import "/Users/sarinaslaptop/Desktop/SATapindoc/node_modules/vuepress-theme-hope/node_modules/@vuepress/helper/lib/client/styles/colors.css";
-import "/Users/sarinaslaptop/Desktop/SATapindoc/node_modules/vuepress-theme-hope/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
-import "/Users/sarinaslaptop/Desktop/SATapindoc/node_modules/vuepress-theme-hope/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
-import "/Users/sarinaslaptop/Desktop/SATapindoc/node_modules/vuepress-theme-hope/lib/bundle/styles/bundle.scss";
+import "/Users/ashkan/Desktop/SATapindoc/node_modules/vuepress-theme-hope/node_modules/@vuepress/helper/lib/client/styles/colors.css";
+import "/Users/ashkan/Desktop/SATapindoc/node_modules/vuepress-theme-hope/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
+import "/Users/ashkan/Desktop/SATapindoc/node_modules/vuepress-theme-hope/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
+import "/Users/ashkan/Desktop/SATapindoc/node_modules/vuepress-theme-hope/lib/bundle/styles/bundle.scss";
 
 defineCatalogInfoGetter((meta) => {
   const title = meta.title;
