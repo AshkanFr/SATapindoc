@@ -2,10 +2,12 @@ export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/ashkan/Desktop/SATapindoc/src/.vuepress/.temp/pages/index.html.js"), meta: {"title":""} }],
-  ["/Connections/", { loader: () => import(/* webpackChunkName: "Connections_index.html" */"/Users/ashkan/Desktop/SATapindoc/src/.vuepress/.temp/pages/Connections/index.html.js"), meta: {"title":"ارتباطات"} }],
   ["/DirectPayment/", { loader: () => import(/* webpackChunkName: "DirectPayment_index.html" */"/Users/ashkan/Desktop/SATapindoc/src/.vuepress/.temp/pages/DirectPayment/index.html.js"), meta: {"title":"پرداخت مستقیم"} }],
+  ["/Connections/", { loader: () => import(/* webpackChunkName: "Connections_index.html" */"/Users/ashkan/Desktop/SATapindoc/src/.vuepress/.temp/pages/Connections/index.html.js"), meta: {"title":"ارتباطات"} }],
+  ["/Orders/", { loader: () => import(/* webpackChunkName: "Orders_index.html" */"/Users/ashkan/Desktop/SATapindoc/src/.vuepress/.temp/pages/Orders/index.html.js"), meta: {"title":""} }],
   ["/ProvinceAndCitiesList/", { loader: () => import(/* webpackChunkName: "ProvinceAndCitiesList_index.html" */"/Users/ashkan/Desktop/SATapindoc/src/.vuepress/.temp/pages/ProvinceAndCitiesList/index.html.js"), meta: {"title":"گرفتن لیست استان‌ها و شهرها"} }],
   ["/Shops/", { loader: () => import(/* webpackChunkName: "Shops_index.html" */"/Users/ashkan/Desktop/SATapindoc/src/.vuepress/.temp/pages/Shops/index.html.js"), meta: {"title":"گرفتن لیست فروشگاه‌ها"} }],
+  ["/Products/", { loader: () => import(/* webpackChunkName: "Products_index.html" */"/Users/ashkan/Desktop/SATapindoc/src/.vuepress/.temp/pages/Products/index.html.js"), meta: {"title":"گرفتن لیست فروشگاه‌ها"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/Users/ashkan/Desktop/SATapindoc/src/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
 ]);
 
