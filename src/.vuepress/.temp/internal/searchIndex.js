@@ -7,6 +7,20 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "محصولات",
+    "headers": [],
+    "path": "/Products/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/Orders/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "پرداخت مستقیم",
     "headers": [
       {
@@ -93,13 +107,6 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
-    "title": "",
-    "headers": [],
-    "path": "/Orders/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "گرفتن لیست استان‌ها و شهرها",
     "headers": [],
     "path": "/ProvinceAndCitiesList/",
@@ -110,13 +117,6 @@ export const SEARCH_INDEX = [
     "title": "گرفتن لیست فروشگاه‌ها",
     "headers": [],
     "path": "/Shops/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "گرفتن لیست فروشگاه‌ها",
-    "headers": [],
-    "path": "/Products/",
     "pathLocale": "/",
     "extraFields": []
   },
