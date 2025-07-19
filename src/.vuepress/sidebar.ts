@@ -67,6 +67,10 @@ export default sidebar([
                 text: "لیست سفارشات",
                 link: "/Orders/#orderList"
             },
+            {
+                text: "راهنمای سفارشات",
+                link: "/OrderGuide/"
+            },
             
         ],
         
@@ -95,6 +99,7 @@ export default sidebar([
                 text: "لیست دسته‌بندی محصولات",
                 link: "/Products/#productCTGList"
             },
+            
             
         ],
         
