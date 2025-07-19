@@ -30,6 +30,7 @@ sidebarDepth: 2
       <th>description</th>
       <th>allow blank</th>
       <th>allow null</th>
+      <th>required</th>
       <th>field</th>
     </tr>
   </thead>
@@ -38,12 +39,14 @@ sidebarDepth: 2
       <td>string</td>
       <td>شناسه فروشگاه</td>
       <td>false</td>
+      <td>false</td>
       <td>true</td>
       <td>shop_id</td>
     </tr>
     <tr>
       <td>string</td>
       <td>نام محصول</td>
+      <td>false</td>
       <td>false</td>
       <td>true</td>
       <td>title</td>
@@ -52,12 +55,14 @@ sidebarDepth: 2
       <td>string</td>
       <td>شناسه گروه محصول</td>
       <td>false</td>
+      <td>false</td>
       <td>true</td>
       <td>category_id</td>
     </tr>
     <tr>
       <td>int</td>
       <td>وزن</td>
+      <td>false</td>
       <td>false</td>
       <td>true</td>
       <td>weight</td>
@@ -66,12 +71,14 @@ sidebarDepth: 2
       <td>int</td>
       <td>قیمت</td>
       <td>false</td>
+      <td>false</td>
       <td>true</td>
       <td>price</td>
     </tr>
     <tr>
       <td>string</td>
       <td>توضیحات</td>
+      <td>true</td>
       <td>true</td>
       <td>true</td>
       <td>description</td>
