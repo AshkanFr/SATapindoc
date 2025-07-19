@@ -72,6 +72,7 @@ export default sidebar([
                 link: "/OrderGuide/"
             },
             
+            
         ],
         
     },
@@ -98,6 +99,30 @@ export default sidebar([
             {
                 text: "لیست دسته‌بندی محصولات",
                 link: "/Products/#productCTGList"
+            },
+            
+            
+        ],
+        
+    },
+    {   text: "مالی",
+        collapsible: true,
+        children: [
+            {
+                text: " درگاه بانکی - افزایش اعتبار) ", 
+                link: "/Financial/#bankPortal"
+            },
+            {
+                text: "لیست مبالغ بیمه",
+                link: "/Financial/#deleteProduct"
+            },
+            {
+                text: "لیست محصولات",
+                link: "/Financial/#productList"
+            },
+            {
+                text: "لیست دسته‌بندی محصولات",
+                link: "/Financial/#productCTGList"
             },
             
             
