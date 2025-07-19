@@ -146,6 +146,7 @@ sidebarDepth: 2
       <th>description</th>
       <th>allow blank</th>
       <th>allow null</th>
+      <th>required</th>
       <th>field</th>
     </tr>
   </thead>
@@ -155,6 +156,7 @@ sidebarDepth: 2
       <td>شناسه فروشگاه</td>
       <td>false</td>
       <td>false</td>
+      <td>true</td>
       <td>shop_id</td>
     </tr>
     <tr>
@@ -162,6 +164,7 @@ sidebarDepth: 2
       <td>شناسه محصول</td>
       <td>false</td>
       <td>false</td>
+      <td>true</td>
       <td>product_id</td>
     </tr>
     <tr>
@@ -169,6 +172,7 @@ sidebarDepth: 2
       <td>نام محصول</td>
       <td>false</td>
       <td>false</td>
+      <td>true</td>
       <td>title</td>
     </tr>
     <tr>
@@ -176,6 +180,7 @@ sidebarDepth: 2
       <td>شناسه گروه محصول</td>
       <td>false</td>
       <td>false</td>
+      <td>true</td>
       <td>category_id</td>
     </tr>
     <tr>
@@ -183,6 +188,7 @@ sidebarDepth: 2
       <td>وزن</td>
       <td>false</td>
       <td>false</td>
+      <td>true</td>
       <td>weight</td>
     </tr>
     <tr>
@@ -190,6 +196,7 @@ sidebarDepth: 2
       <td>قیمت</td>
       <td>false</td>
       <td>false</td>
+      <td>true</td>
       <td>price</td>
     </tr>
     <tr>
@@ -197,11 +204,12 @@ sidebarDepth: 2
       <td>توضیحات</td>
       <td>true</td>
       <td>true</td>
+      <td>true</td>
       <td>description</td>
     </tr>
   </tbody>
 </table>
-<br/>
+
  
 <!-- closing right section -->
 </div>
@@ -265,6 +273,7 @@ sidebarDepth: 2
       <th>description</th>
       <th>allow blank</th>
       <th>allow null</th>
+      <th>required</th>
       <th>field</th>
     </tr>
   </thead>
@@ -274,6 +283,7 @@ sidebarDepth: 2
       <td>شناسه فروشگاه</td>
       <td>false</td>
       <td>false</td>
+      <td>true</td>
       <td>shop_id</td>
     </tr>
     <tr>
@@ -281,6 +291,7 @@ sidebarDepth: 2
       <td>شناسه محصول</td>
       <td>false</td>
       <td>false</td>
+      <td>true</td>
       <td>product_id</td>
     </tr>
   </tbody>
@@ -345,6 +356,7 @@ sidebarDepth: 2
       <th>description</th>
       <th>allow blank</th>
       <th>allow null</th>
+      <th>required</th>
       <th>field</th>
     </tr>
   </thead>
@@ -354,6 +366,7 @@ sidebarDepth: 2
       <td>تعداد آیتم های جهت نمایش در صفحه</td>
       <td>false</td>
       <td>false</td>
+      <td>true</td>
       <td>count</td>
     </tr>
     <tr>
@@ -361,6 +374,7 @@ sidebarDepth: 2
       <td>شماره صفحه</td>
       <td>false</td>
       <td>false</td>
+      <td>true</td>
       <td>page</td>
     </tr>
     <tr>
@@ -368,11 +382,13 @@ sidebarDepth: 2
       <td>شناسه فروشگاه</td>
       <td>false</td>
       <td>false</td>
+      <td>true</td>
       <td>shop_id</td>
     </tr>
     <tr>
       <td>int</td>
       <td>شناسه یکتای محصول</td>
+      <td>false</td>
       <td>false</td>
       <td>false</td>
       <td>product_id</td>
@@ -382,11 +398,13 @@ sidebarDepth: 2
       <td>نام</td>
       <td>false</td>
       <td>false</td>
+      <td>false</td>
       <td>title</td>
     </tr>
     <tr>
       <td>string</td>
       <td>شناسه گروه محصول</td>
+      <td>false</td>
       <td>false</td>
       <td>false</td>
       <td>category_id</td>
@@ -396,6 +414,7 @@ sidebarDepth: 2
       <td>وزن</td>
       <td>false</td>
       <td>false</td>
+      <td>false</td>
       <td>weight</td>
     </tr>
     <tr>
@@ -403,11 +422,13 @@ sidebarDepth: 2
       <td>قیمت</td>
       <td>false</td>
       <td>false</td>
+      <td>false</td>
       <td>price</td>
     </tr>
     <tr>
       <td>string</td>
       <td>تاریخ ایجاد</td>
+      <td>false</td>
       <td>false</td>
       <td>false</td>
       <td>created_at</td>
