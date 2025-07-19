@@ -7,7 +7,7 @@ sidebarDepth: 2
 <div class="container">
 
 # راهنمای سفارشات  
-<hr>
+
 برای اطلاع از مقادیری که فیلدهای نوع پرداخت سفارش،نوع سفارش،نوع ثبت سفارش،نوع محتوای سفارش و وضعیت سفارشات میتوانند داشته باشند،به جداول زیر مراجعه کنید. 
 
 
@@ -15,211 +15,61 @@ sidebarDepth: 2
 
 <div class="right-section">
 
-<h2 id="createOrder">ثبت سفارش</h2>
+<h2 id="pay_type">نوع پرداخت</h2>
 
- توضیحات ثبت سفارش  
- 
+ نوع پرداخت شامل یکی از چهار حالت زیر می‌باشد:
+ <br/>
+ ۱.پرداخت در محل(COD) : در این حالت هزینه ارسال و هزینه کالا(ارزش ریالی کالا)در مقصد از "گیرنده "دریافت  می‌شود.
+ <br/>
+ ۲.آنلاین:در این حالت در مقصد هیچ مبلغی از "گیرنده"دریافت نمیشود.
+ <br/>
+ ۳.پس‌کرایه:در این حالت تنها هزینه ارسال در مقصد از "گیرنده" دریافت می‌شود.
+ <br/>
+ ۴.ارسال رایگان:در این حالت تنها هزینه‌ی کالا(ارزش ریالی کالا)در مقصد از "گیرنده"دریافت می‌شود.
+
+ ::: info نکته
+ در هر چهار روش،هزینه‌ی ارسال از شارژ کیف پول پنل کسر میگردد.در روش پرداخت های "پس کرایه"،"پرداخت در محل(COD)"و "ارسال رایگان"،مبالغ دریافتی توسط پستچی از گیرنده،پس از توزیع سفارش به گیرنده،به شارژ کیف پول باز می‌گردد.
+ :::
 <br/>
 <br/>
 <br/>
 
-
-<table>
-  <thead>
-    <tr>
-      <th>type</th>
-      <th>description</th>
-      <th>allow blank</th>
-      <th>allow null</th>
-      <th>required</th>
-      <th>field</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>int</td><td>نوع ثبت سفارش</td><td>false</td><td>false</td><td>true</td><td>register_type</td></tr>
-    <tr><td>str</td><td>شناسه فروشگاه</td><td>false</td><td>false</td><td>true</td><td>shop_id</td></tr>
-    <tr><td>str</td><td>آدرس گیرنده</td><td>false</td><td>false</td><td>true</td><td>address</td></tr>
-    <tr><td>int</td><td>کد شهرستان</td><td>false</td><td>false</td><td>true</td><td>city_code</td></tr>
-    <tr><td>int</td><td>کد استان</td><td>false</td><td>false</td><td>true</td><td>province_code</td></tr>
-    <tr><td>str</td><td>توضیحات</td><td>false</td><td>true</td><td>true</td><td>description</td></tr>
-    <tr><td>str</td><td>ایمیل</td><td>false</td><td>true</td><td>true</td><td>email</td></tr>
-    <tr><td>int</td><td>کد کارمند</td><td>false</td><td>false</td><td>true</td><td>employee_code</td></tr>
-    <tr><td>str</td><td>نام</td><td>false</td><td>false</td><td>true</td><td>first_name</td></tr>
-    <tr><td>str</td><td>نام خانوادگی</td><td>false</td><td>false</td><td>true</td><td>last_name</td></tr>
-    <tr><td>str</td><td>شماره موبایل</td><td>false</td><td>false</td><td>true</td><td>mobile</td></tr>
-    <tr><td>str</td><td>شماره تلفن</td><td>false</td><td>true</td><td>true</td><td>phone</td></tr>
-    <tr><td>int</td><td>کدپستی</td><td>false</td><td>false</td><td>true</td><td>postal_code</td></tr>
-    <tr><td>int</td><td>نوع پرداخت سفارش</td><td>false</td><td>false</td><td>true</td><td>pay_type</td></tr>
-    <tr><td>int</td><td>نوع سفارش</td><td>false</td><td>false</td><td>true</td><td>order_type</td></tr>
-    <tr><td>int</td><td>شناسه بسته پستی</td><td>false</td><td>false</td><td>true</td><td>box_id</td></tr>
-    <tr><td>int</td><td>وزن بسته بندی</td><td>false</td><td>false</td><td>true</td><td>package_weight</td></tr>
-    <tr><td>int</td><td>کد معرف</td><td>false</td><td>false</td><td>false</td><td>presenter_code</td></tr>
-    <tr><td>int</td><td>تعداد محصول</td><td>false</td><td>false</td><td>true</td><td>count</td></tr>
-    <tr><td>int</td><td>تخفیف محصول</td><td>false</td><td>false</td><td>true</td><td>discount</td></tr>
-    <tr><td>int</td><td>مبلغ محصول</td><td>false</td><td>true</td><td>true</td><td>price</td></tr>
-    <tr><td>int</td><td>نام محصول</td><td>false</td><td>true</td><td>true</td><td>title</td></tr>
-    <tr><td>int</td><td>وزن بسته بندی</td><td>false</td><td>true</td><td>true</td><td>weight</td></tr>
-    <tr><td>int</td><td>شناسه یکتا محصول</td><td>false</td><td>true</td><td>true</td><td>product_id</td></tr>
-    <tr><td>str</td><td>شناسه دستی سفارش</td><td>false</td><td>false</td><td>true</td><td>manual_id</td></tr>
-    <tr><td>bool</td><td>بیمه کالا ( ارسال این فیلد برای سفارش های آنلاین اجباری هست در صورت عدم انتخاب توسط سیستم مقدار دهی میشود.)</td><td>false</td><td>true</td><td>false</td><td>has_insurance</td></tr>
-    <tr><td>int</td><td>نوع محتوای کالا (در صورت وارد نکردن این فیلد، محتوای کالا بصورت پیشفرض عادی در نظر گرفته میشود)</td><td>false</td><td>false</td><td>false</td><td>content_type</td></tr>
-    <tr><td>int</td><td>شناسه کیوسک جابار</td><td>false</td><td>true</td><td>true</td><td>kiosk_id</td></tr>
-    <tr><td>int</td><td>مبلغ پیش پرداخت (درصورتی که نوع پرداخت، پرداخت در محل باشد قابل تنظیم میباشد(پیشفرض 0))</td><td>false</td><td>true</td><td>false</td><td>pre_paid_price</td></tr>
-  </tbody>
-</table>
-<!-- ---------------------- -->
-
-<table>
-  <thead>
-    <tr>
-      <th>type</th>
-      <th>description</th>
-      <th>allow blank</th>
-      <th>allow null</th>
-      <th>field</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>str</td>
-      <td>بارکد مرسوله</td>
-      <td>false</td>
-      <td>false</td>
-      <td>barcode</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>شناسه یکتا مرسوله</td>
-      <td>false</td>
-      <td>false</td>
-      <td>order_id</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>وضعیت مرسوله</td>
-      <td>false</td>
-      <td>false</td>
-      <td>status</td>
-    </tr>
-    <tr>
-      <td>str</td>
-      <td>نام گیرنده</td>
-      <td>false</td>
-      <td>false</td>
-      <td>first_name</td>
-    </tr>
-    <tr>
-      <td>str</td>
-      <td>نام خانوادگی گیرنده</td>
-      <td>false</td>
-      <td>false</td>
-      <td>last_name</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>کد استان</td>
-      <td>false</td>
-      <td>false</td>
-      <td>state_code</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>کد شهرستان</td>
-      <td>false</td>
-      <td>false</td>
-      <td>city_code</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>مبلغ بیمه</td>
-      <td>false</td>
-      <td>false</td>
-      <td>insurance_price</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>مالیات بیمه</td>
-      <td>false</td>
-      <td>false</td>
-      <td>insurance_tax</td>
-    </tr>
-  </tbody>
-</table>
 <!-- closing right section -->
 </div>
 
 <div class="left-section">
 
-<div class="token">
-<span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/register</span>
- <span class="badge post">POST</span>
+<br/>
+<div id="jadval1">
+<table>
+  <thead>
+    <tr>
+      <th>کد</th>
+      <th>نوع پرداخت</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>پرداخت در محل (COD)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>پرداخت آنلاین</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>پس کرایه</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ارسال رایگان</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
-##### نمونه جیسون جهت ارسال
-```json
-{
 
-	"register_type": 0,
-	"shop_id":"7c4s979...",
-	"address":"tehran-...",
-	"city_code":"1",
-	"province_code":"1",
-	"description":null,
-	"email":null,
-	"employee_code":"-1",
-	"first_name":"my first name",
-	"last_name":"my last name",
-	"mobile":"09011111111",
-	"phone":null,
-	"postal_code":"1313131313",
-	"pay_type":"1",
-	"order_type":"0",
-	"box_id": 10,
-	"kiosk_id": 101,
-        "pre_paid_price": 0,
-	"package_weight": 10,
-	"presenter_code":999,
-	"manual_id":"1",
-        "has_insurance":"true",
-        "content_type": 1,
-
-	"products":[
-		{
-			"count": 1,
-			"discount": 0,
-			"price": 5000,
-			"title": "my product title",
-			"weight":500,
-			"product_id": null
-
-		}
-	]
-}
-
-```
-
-##### نمونه جیسون خروجی 
-```json
-{
-    "returns": {
-        "status": 200,
-        "message": "عملیات با موفقیت انجام شد."
-    },
-    "entries": {
-        "barcode": "21242000512705555221",
-        "order_id": 16013,
-        "status": 2,
-        "first_name": "my first name",
-        "last_name": "my last name",
-        "state_code": "2",
-        "city_code": "41",
-        "insurance_price": 0,
-        "insurance_tax": 0,
-    }
-}
-
-
-```
 <!-- closing left -->
 </div> 
 <!-- closing middle -->. 
@@ -229,157 +79,51 @@ sidebarDepth: 2
 
 <div class="right-section">
 
-<h2 id="orderDetails">جزئیات سفارش</h2>
+<h2 id="order_type">نوع سفارش</h2>
 
-توضیحات جزئیات سفارش
-<!-- ------- -->
+در حال حاضر دو سرویس پست پیشتاز و پست ویژه در بستر تجارت الکترونیک پست،قابل استفاده است:
+<br/>
+۱.پیشتاز:این سرویس تقریبا تمام نقاط کشور اعم از شهر ها و روستا ها را پوشش می‌دهد.مدت زمان توزیع(SLA)در این سرویس، ۳ الی ۵ روز می‌باشد.
+<br/>
+۲.ویژه: ارسال در این سرویس تنها بین مرکز استان به مرکز استان می‌باشد. مدت زمان توزیع(SLA)در این سرویس ۲۴ ساعت می‌باشد.
+
 <br/>
 <br/>
-<table>
-  <thead>
-    <tr>
-      <th>type</th>
-      <th>description</th>
-      <th>allow blank</th>
-      <th>allow null</th>
-      <th>required</th>
-      <th>field</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>str</td>
-      <td>شناسه فروشگاه</td>
-      <td>false</td>
-      <td>false</td>
-      <td>true</td>
-      <td>shop_id</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>شناسه یکتا سفارش</td>
-      <td>false</td>
-      <td>false</td>
-      <td>true</td>
-      <td>order_id</td>
-    </tr>
-  </tbody>
-</table>
-<!-- --------- -->
-<!-- ------- -->
-<table>
-  <thead>
-    <tr>
-      <th>type</th>
-      <th>description</th>
-      <th>allow blank</th>
-      <th>allow null</th>
-      <th>required</th>
-      <th>field</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>str</td><td>شناسه سفارش</td><td>false</td><td>false</td><td>true</td><td>id</td></tr>
-    <tr><td>str</td><td>بارکد مرسوله</td><td>false</td><td>false</td><td>true</td><td>barcode</td></tr>
-    <tr><td>int</td><td>شناسه یکتا سفارش</td><td>false</td><td>false</td><td>true</td><td>order_id</td></tr>
-    <tr><td>int</td><td>وضعیت مرسوله</td><td>false</td><td>false</td><td>true</td><td>status</td></tr>
-    <tr><td>str</td><td>نام گیرنده</td><td>false</td><td>false</td><td>true</td><td>first_name</td></tr>
-    <tr><td>str</td><td>نام خانوادگی گیرنده</td><td>false</td><td>false</td><td>true</td><td>last_name</td></tr>
-    <tr><td>int</td><td>کد استان گیرنده</td><td>false</td><td>false</td><td>true</td><td>state_code</td></tr>
-    <tr><td>int</td><td>کد شهر گیرنده</td><td>false</td><td>false</td><td>true</td><td>city_code</td></tr>
-    <tr><td>str</td><td>آدرس گیرنده</td><td>false</td><td>false</td><td>true</td><td>address</td></tr>
-    <tr><td>int</td><td>کد پستی گیرنده</td><td>false</td><td>false</td><td>true</td><td>postal_code</td></tr>
-    <tr><td>str</td><td>ایمیل گیرنده</td><td>true</td><td>true</td><td>true</td><td>email</td></tr>
-    <tr><td>str</td><td>شماره تماس گیرنده</td><td>true</td><td>true</td><td>true</td><td>phone</td></tr>
-    <tr><td>str</td><td>شماره موبایل گیرنده</td><td>false</td><td>false</td><td>true</td><td>mobile</td></tr>
-    <tr><td>int</td><td>نحوه پرداخت</td><td>false</td><td>false</td><td>true</td><td>pay_type</td></tr>
-    <tr><td>int</td><td>مبلغ بیمه</td><td>false</td><td>false</td><td>true</td><td>insurance_price</td></tr>
-    <tr><td>int</td><td>مالیات بیمه</td><td>false</td><td>false</td><td>true</td><td>insurance_tax</td></tr>
-    <tr><td>int</td><td>نوع سفارش</td><td>false</td><td>false</td><td>true</td><td>order_type</td></tr>
-    <tr><td>str</td><td>توضیحات</td><td>true</td><td>true</td><td>true</td><td>description</td></tr>
-    <tr><td>int</td><td>وزن بسته بندی</td><td>false</td><td>false</td><td>true</td><td>package_weight</td></tr>
-    <tr><td>int</td><td>وزن کل</td><td>false</td><td>false</td><td>true</td><td>total_weight</td></tr>
-    <tr><td>int</td><td>مبلغ کل فاکتور</td><td>false</td><td>false</td><td>true</td><td>factor_price</td></tr>
-    <tr><td>str</td><td>متن فاکتور</td><td>false</td><td>false</td><td>true</td><td>factor_title</td></tr>
-    <tr><td>str</td><td>تاریخ ساخت</td><td>false</td><td>false</td><td>true</td><td>created_at</td></tr>
-    <tr><td>int</td><td>تعداد محصول</td><td>false</td><td>false</td><td>true</td><td>count</td></tr>
-    <tr><td>str</td><td>تخفیف محصول</td><td>false</td><td>false</td><td>true</td><td>discount</td></tr>
-    <tr><td>int</td><td>مبلغ محصول</td><td>false</td><td>false</td><td>true</td><td>price</td></tr>
-    <tr><td>str</td><td>نام محصول</td><td>false</td><td>false</td><td>true</td><td>title</td></tr>
-    <tr><td>int</td><td>وزن محصول</td><td>false</td><td>false</td><td>true</td><td>weight</td></tr>
-    <tr><td>int</td><td>شناسه یکتا محصول</td><td>false</td><td>false</td><td>true</td><td>product_id</td></tr>
-    <tr><td>int</td><td>شناسه کیوسک جابار</td><td>false</td><td>false</td><td>true</td><td>kiosk_id</td></tr>
-  </tbody>
-</table>
-<!-- ------- -->
 
- 
-<!-- closing right section -->
 </div>
 <div class="left-section">
+<br/>
+<br/>
 
-<div class="token">
-<span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/detail</span>
- <span class="badge post">POST</span>
-</div>
-
-##### نمونه جیسون جهت ارسال 
-
-```json
-{
-	"shop_id":"fc45949a-921d-4b4f-1ade-ab5180f7dcve",
-	"order_id":16013
-}
-
-```
-##### نمونه جیسون خروجی 
-
-```json
-{
-    "returns": {
-        "status": 200,
-        "message": "عملیات با موفقیت انجام شد."
-    },
-    "entries": {
-        "id": "d95d0f45-6162-4ec3-bd29-09452c148b40",
-        "barcode": "21292000411901545180",
-        "order_id": 16013,
-        "status": 2,
-        "first_name": "my first name",
-        "last_name": "my last name",
-        "state_code": "2",
-        "city_code": "41",
-        "address": "tehran-...",
-        "postal_code": "1343242123",
-        "email": "",
-        "phone": "02166810643",
-        "mobile": "09011111111",
-        "pay_type": "1",
-        "order_type": 0,
-        "description": "",
-        "package_weight": 10,
-        "insurance_price": 0,
-        "insurance_tax": 0,
-        "total_weight": 210,
-        "factor_price": 552102,
-        "factor_title": " نیازی به دریافت وجه نمی\u200cباشد (Online",
-        "created_at": "1398-05-13 12:23",
-        "kiosk_id": 101,
-        "products": [
-            {
-                "count": 1,
-                "discount": 0,
-                "price": 500000,
-                "title": "none",
-                "weight": 200,
-                "product_id": null
-            }
-        ],
-    }
-}
-```
-
-
+<table  dir="rtl">
+  <thead>
+    <tr>
+      <th colspan="2">(نوع پرداخت) pay_type</th>
+    </tr>
+    <tr>
+      <th>کد</th>
+      <th>عنوان</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>پرداخت در محل (COD)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>پرداخت آنلاین</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>پس کرایه</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ارسال رایگان</td>
+    </tr>
+  </tbody>
+</table>
 <!-- closing left section -->
 </div>
 <!-- closing middle -->
