@@ -24,6 +24,18 @@ export default navbar([
         text: "فروشگاه‌ها",
         link: "/Shops/",
     },
+
+    {
+        text: "محصولات",
+        link: "/Products/",
+    },
+
+    {
+        text: "سفارشات",
+        link: "/Orders/",
+    },
+
+
     {
         text: "تماس با ما",
         link: "/contact/",

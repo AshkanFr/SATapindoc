@@ -52,7 +52,53 @@ export default sidebar([
         
     },
 
+    {   text: "سفارشات",
+        collapsible: true,
+        children: [
+            {
+                text: "ثبت سفارش",
+                link: "/Orders/#createOrder"
+            },
+            {
+                text: "جزییات سفارش ", 
+                link: "/Orders/#orderDetails"
+            },
+            {
+                text: "لیست سفارشات",
+                link: "/Orders/#orderList"
+            },
+            
+        ],
+        
+    },
 
+    {   text: "محصولات",
+        collapsible: true,
+        children: [
+            {
+                text: "ساخت محصول",
+                link: "/Products/#createProduct"
+            },
+            {
+                text: "ویرایش محصول ", 
+                link: "/Products/#editProduct"
+            },
+            {
+                text: "حذف محصول",
+                link: "/Products/#deleteProduct"
+            },
+            {
+                text: "لیست محصولات",
+                link: "/Products/#productList"
+            },
+            {
+                text: "لیست دسته‌بندی محصولات",
+                link: "/Products/#productCTGList"
+            },
+            
+        ],
+        
+    },
 
     {
         text: "تماس با ما",
