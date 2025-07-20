@@ -56,6 +56,10 @@ export default sidebar([
         collapsible: true,
         children: [
             {
+                text: "اطلاعات پایه‌ سفارش",
+                link: "/Orders/#basicInfo"
+            },
+            {
                 text: "ثبت سفارش",
                 link: "/Orders/#createOrder"
             },
@@ -113,19 +117,13 @@ export default sidebar([
                 link: "/Financial/#bankPortal"
             },
             {
-                text: "لیست مبالغ بیمه",
-                link: "/Financial/#deleteProduct"
+                text: "اعتبار فروشگاه",
+                link: "/Financial/#shopCredit"
             },
             {
-                text: "لیست محصولات",
-                link: "/Financial/#productList"
+                text: "لیست تراکنش‌های آنلاین ",
+                link: "/Financial/#onlineTransactionList"
             },
-            {
-                text: "لیست دسته‌بندی محصولات",
-                link: "/Financial/#productCTGList"
-            },
-            
-            
         ],
         
     },
