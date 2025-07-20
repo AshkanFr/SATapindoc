@@ -18,13 +18,13 @@ sidebarDepth: 2
 <h2 id="pay_type">نوع پرداخت</h2>
 
  نوع پرداخت شامل یکی از چهار حالت زیر می‌باشد:
- <br/>
+ <br/><br/>
  ۱.پرداخت در محل(COD) : در این حالت هزینه ارسال و هزینه کالا(ارزش ریالی کالا)در مقصد از "گیرنده "دریافت  می‌شود.
- <br/>
+ <br/><br/>
  ۲.آنلاین:در این حالت در مقصد هیچ مبلغی از "گیرنده"دریافت نمیشود.
- <br/>
+ <br/><br/>
  ۳.پس‌کرایه:در این حالت تنها هزینه ارسال در مقصد از "گیرنده" دریافت می‌شود.
- <br/>
+ <br/><br/>
  ۴.ارسال رایگان:در این حالت تنها هزینه‌ی کالا(ارزش ریالی کالا)در مقصد از "گیرنده"دریافت می‌شود.
 
  ::: info نکته
@@ -40,61 +40,6 @@ sidebarDepth: 2
 <div class="left-section">
 
 <br/>
-<div id="jadval1">
-<table>
-  <thead>
-    <tr>
-      <th>کد</th>
-      <th>نوع پرداخت</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>پرداخت در محل (COD)</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>پرداخت آنلاین</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>پس کرایه</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>ارسال رایگان</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-<!-- closing left -->
-</div> 
-<!-- closing middle -->. 
-<!-- closing part_1 -->
-</div>
-<div class="middle">
-
-<div class="right-section">
-
-<h2 id="order_type">نوع سفارش</h2>
-
-در حال حاضر دو سرویس پست پیشتاز و پست ویژه در بستر تجارت الکترونیک پست،قابل استفاده است:
-<br/>
-۱.پیشتاز:این سرویس تقریبا تمام نقاط کشور اعم از شهر ها و روستا ها را پوشش می‌دهد.مدت زمان توزیع(SLA)در این سرویس، ۳ الی ۵ روز می‌باشد.
-<br/>
-۲.ویژه: ارسال در این سرویس تنها بین مرکز استان به مرکز استان می‌باشد. مدت زمان توزیع(SLA)در این سرویس ۲۴ ساعت می‌باشد.
-
-<br/>
-<br/>
-
-</div>
-<div class="left-section">
-<br/>
-<br/>
-
 <table  dir="rtl">
   <thead>
     <tr>
@@ -124,6 +69,51 @@ sidebarDepth: 2
     </tr>
   </tbody>
 </table>
+<!-- closing left -->
+</div> 
+<!-- closing middle -->. 
+<!-- closing part_1 -->
+</div>
+<div class="middle">
+
+<div class="right-section">
+
+<h2 id="order_type">نوع سفارش</h2>
+
+در حال حاضر دو سرویس پست پیشتاز و پست ویژه در بستر تجارت الکترونیک پست،قابل استفاده است:
+<br/><br/>
+۱.پیشتاز:این سرویس تقریبا تمام نقاط کشور اعم از شهر ها و روستا ها را پوشش می‌دهد.مدت زمان توزیع(SLA)در این سرویس، ۳ الی ۵ روز می‌باشد.
+<br/><br/>
+۲.ویژه: ارسال در این سرویس تنها بین مرکز استان به مرکز استان می‌باشد. مدت زمان توزیع(SLA)در این سرویس ۲۴ ساعت می‌باشد.
+
+<br/>
+<br/>
+
+</div>
+<div class="left-section">
+<br/>
+
+<table  dir="rtl">
+  <thead>
+    <tr>
+      <th colspan="2">(نوع سفارش) order_type</th>
+    </tr>
+    <tr>
+      <th>کد</th>
+      <th>عنوان</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>پیشتاز</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ویژه</td>
+    </tr>
+  </tbody>
+</table>
 <!-- closing left section -->
 </div>
 <!-- closing middle -->
@@ -133,207 +123,91 @@ sidebarDepth: 2
 <div class="middle">
 <div class="right-section">
 
-<h2 id="orderList">لیست سفارشات</h2>
-توضیحات راجع به لیست سفارشات
-
-<table>
+<h2 id="register_type">نوع ثبت سفارش </h2>
+نوع ثبت سفارش در تاپین به سه روش زیر امکان پذیر است:<br/><br/>
+۱.ثبت در وضعیت تحت بررسی: پس از ثبت،سفارش در وضعیت تحت بررسی قرار می‌گیرد. در این وضعیت امکان ویرایش سفارش و یا حذف سفارش وجود دارد و هنوز بارکد برای سفارش دریافت نشده است.<br/><br/>
+۲.ثبت در وضعیت آماده به پرینت : پس از ثبت،سفارش در وضعیت "معلق(آماده به پرینت)"قرار می‌گیرد.در این وضعیت سفارش بارکد گرفته و دیگر امکان ویرایش سفارش وجود ندارد ولی امکان حذف سفارش میسر است.همچنین در این وضعیت امکان چاپ فاکتور و الصاق آن به بسته،وجود دارد.<br/><br/>
+۳.ثبت در وضعیت آماده به ارسال: پس از ثبت،سفارش در وضعیت "آماده به ارسال"قرار می‌گیرد.در این وضعیت سفارش بارکد گرفته و دیگر امکان ویرایش سفارش وجود ندارد.در این وضعیت پس از چاپ فاکتور و الصاق آن به بسته ،می‌بایست حتما سفارش تا ۲۴ ساعت آینده تحویل مأمور جمع‌آور پست یا نمایندگی های مورد قبول پست گردد و در غیر این صورت اعتبار بارکد پستی ،منقضی میگردد.
+<!-- closing right-section -->
+</div>
+<div class="left-section">
+<br/>
+<table  dir="rtl">
   <thead>
     <tr>
-      <th>type</th>
-      <th>description</th>
-      <th>allow blank</th>
-      <th>allow null</th>
-      <th>required</th>
-      <th>field</th>
+      <th colspan="2">(نوع ثبت سفارش) register_type</th>
+    </tr>
+    <tr>
+      <th>کد</th>
+      <th>عنوان</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>str</td>
-      <td>شناسه فروشگاه</td>
-      <td>false</td>
-      <td>false</td>
-      <td>true</td>
-      <td>shop_id</td>
+      <td>0</td>
+      <td>تحت بررسی</td>
     </tr>
     <tr>
-      <td>int</td>
-      <td>تعداد آیتم ها جهت نمایش در صفحه</td>
-      <td>false</td>
-      <td>false</td>
-      <td>true</td>
-      <td>count</td>
+      <td>1</td>
+      <td>آماده به پرینت</td>
     </tr>
     <tr>
-      <td>int</td>
-      <td>شماره صفحه</td>
-      <td>false</td>
-      <td>false</td>
-      <td>true</td>
-      <td>page</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>شناسه یکتا سفارش</td>
-      <td>false</td>
-      <td>false</td>
-      <td>false</td>
-      <td>order_id</td>
-    </tr>
-    <tr>
-      <td>str</td>
-      <td>بارکد</td>
-      <td>false</td>
-      <td>false</td>
-      <td>false</td>
-      <td>barcode</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>کد شهرستان</td>
-      <td>false</td>
-      <td>false</td>
-      <td>false</td>
-      <td>city_code</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>کد استان</td>
-      <td>false</td>
-      <td>false</td>
-      <td>false</td>
-      <td>province_code</td>
-    </tr>
-    <tr>
-      <td>str</td>
-      <td>نام</td>
-      <td>false</td>
-      <td>false</td>
-      <td>false</td>
-      <td>first_name</td>
-    </tr>
-    <tr>
-      <td>str</td>
-      <td>نام خانوادگی</td>
-      <td>false</td>
-      <td>false</td>
-      <td>false</td>
-      <td>last_name</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>نوع پرداخت سفارش</td>
-      <td>false</td>
-      <td>false</td>
-      <td>false</td>
-      <td>pay_type</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>نوع سفارش</td>
-      <td>false</td>
-      <td>false</td>
-      <td>false</td>
-      <td>order_type</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>وضعیت</td>
-      <td>false</td>
-      <td>false</td>
-      <td>true</td>
-      <td>status</td>
-    </tr>
-    <tr>
-      <td>str</td>
-      <td>تاریخ ثبت سفارش</td>
-      <td>false</td>
-      <td>false</td>
-      <td>true</td>
-      <td>created_at</td>
+      <td>2</td>
+      <td>آماده به ارسال</td>
     </tr>
   </tbody>
 </table>
-<!-- ---------------- -->
+<!-- closing left section -->
+</div>
+<!-- closing part_3 -->
+</div>
+<!-- opening content type -->
+<div class="middle">
+<div class="right-section">
+
+<h2 id="content_type">نوع محتوای سفارش </h2>
+محتوای سفارش شامل حالت های زیر می‌باشد:<br/>
+۱.شکستنی<br/><br/>
+۲.مایعات <br/><br/>
+۳.غیر استاندارد: در صورتیکه هر یک از ابعاد بسته‌بندی (طول*عرض*ارتفاع)بیش از ۱۸*۲۵*۳۵ باشد،مرسوله غیر استاندارد تلقی می‌شود.<br/><br/>
+۴.عادی: در صورتی که ابعاد بسته‌بندی مرسوله غیر استاندارد نباشد و جزو مرسولات شکستنی یا مایعات نباشد،مرسوله عادی تلقی می‌شود.
 <!-- closing right-section -->
 </div>
 <div class="left-section">
-
-<div class="token">
-<span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/list</span>
- <span class="badge post">POST</span>
-</div>
-
-##### نمونه جیسون جهت ارسال 
-
-```json
-{
-	"shop_id":"fc45949a-921d-4b4f-1ade-ab5180f7dcve",
-	"count":"10",
-	"page":"1"
-}
-
-
-
-```
-
-##### نمونه جیسون خروجی 
-
-```json
-{
-    "returns": {
-        "status": 200,
-        "message": "عملیات با موفقیت انجام شد."
-    },
-    "entries": {
-        "list": [
-            {
-                "id": "d95d0f45-6162-4ec3-bd29-09452c148b40",
-                "barcode": "21294720411963211126",
-                "order_id": 16013,
-                "status": 2,
-                "first_name": "my first name",
-                "last_name": "my last name",
-                "mobile": "09122222222",
-                "state_code": "2",
-                "city_code": "41",
-                "pay_type": "1",
-                "order_type": 0,
-                "created_at": "1398-05-13 12:23"
-            }
-        ],
-        "count": 1,
-        "page": 1,
-        "total_count": 15
-    }
-}
-
-
-```
-::: info نکته
-
-<div class="info-box">
-  فیلد تاریخ ایجاد باید بصورت یکی از فرمت های زیر باشد:
-
 <br/>
-{
-   "created_at": "1398-02-12 12:30"
-}
-
-
-{
-  "created_at": "1398-02-12"
-}
-</div>
-
-:::
+<table  dir="rtl">
+  <thead>
+    <tr>
+      <th colspan="2">(نوع محتوای سفارش) content_type</th>
+    </tr>
+    <tr>
+      <th>کد</th>
+      <th>عنوان</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>عادی</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>شکستنی</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>مایعات</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>غیر استاندارد</td>
+    </tr>
+  </tbody>
+</table>
 <!-- closing left section -->
 </div>
 
-<!-- closing middle -->
-<!-- closing part_3 -->
 </div>
-
 <!-- closing container -->
 </div>
 
