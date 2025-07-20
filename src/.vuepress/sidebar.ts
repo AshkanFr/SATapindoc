@@ -44,10 +44,6 @@ export default sidebar([
                 text: "جزییات فروشگاه",
                 link: "/Shops/#shopDetail"
             },
-            {
-                text: "اعتبار فروشگاه",
-                link: "/Shops/#shopCredit"
-            },
         ],
         
     },
