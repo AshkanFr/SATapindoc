@@ -140,6 +140,22 @@ export default sidebar([
         
     },
 
+    {   text: "کارها",
+        collapsible: true,
+        children: [
+            {
+                text: "لیست کارها", 
+                link: "/Tasks/#taskList"
+            },
+            {
+                text: "جزییات کارها",
+                link: "/Tasks/#taskDetail"
+            },
+            
+        ],
+        
+    },
+
     {
         text: "کارمندان",
         link: "/Employee/",
