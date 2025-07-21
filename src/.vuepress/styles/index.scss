@@ -251,3 +251,83 @@ h1, h2, h3, h4, h5, h6, p, div, li, a {
   width: auto;
   vertical-align: middle;
 }
+// --------------------------------------------------------------------
+
+.vp-sidebar {
+  font-family: "IRANSansX", "Vazir", sans-serif;
+  background-color: #fcfcfc;
+  padding: 1rem;
+
+  .vp-sidebar-group {
+    margin-bottom: 1rem;
+
+    .vp-sidebar-group-title {
+      font-weight: 600;
+      font-size: 15px;
+      padding: 0.4rem 0.8rem;
+      background-color: #edf6ff;
+      color: #0f172a;
+      border-right: 3px solid #007acc;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .vp-sidebar-links {
+      list-style: none;
+      padding-right: 0;
+      margin-top: 0.3rem;
+
+      > li {
+        margin-bottom: 0.2rem;
+
+        > a {
+          display: block;
+          padding: 0.3rem 0.7rem;
+          background-color: #f4f7fa;
+          border-radius: 4px;
+          color: #1e293b;
+          font-size: 13.5px;
+          margin-right: 0.8rem;
+
+          &:hover {
+            background-color: #e5effc;
+            color: #1e40af;
+          }
+        }
+
+        > ul {
+          list-style: none;
+          margin-top: 0.2rem;
+          padding-right: 0;
+
+          > li > a {
+            display: block;
+            padding: 0.3rem 0.7rem;
+            background-color: #fffaf0;
+            color: #7c2d12;
+            font-size: 13px;
+            margin-right: 1.5rem;
+            border-radius: 4px;
+
+            &:hover {
+              background-color: #fef3c7;
+              color: #b45309;
+            }
+          }
+
+          > li > ul > li > a {
+            margin-right: 2.3rem;
+            background-color: #f0f9ff;
+            color: #0369a1;
+            font-size: 12.8px;
+
+            &:hover {
+              background-color: #e0f2fe;
+              color: #0c4a6e;
+            }
+          }
+        }
+      }
+    }
+  }
+}

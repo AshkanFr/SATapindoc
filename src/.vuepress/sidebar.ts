@@ -48,34 +48,59 @@ export default sidebar([
         
     },
 
-    {   text: "سفارشات",
-        collapsible: true,
-        children: [
-            {
-                text: "اطلاعات پایه‌ سفارش",
-                link: "/Orders/#basicInfo"
-            },
-            {
-                text: "ثبت سفارش",
-                link: "/Orders/#createOrder"
-            },
-            {
-                text: "جزییات سفارش ", 
-                link: "/Orders/#orderDetails"
-            },
-            {
-                text: "لیست سفارشات",
-                link: "/Orders/#orderList"
-            },
-            {
-                text: "راهنمای سفارشات",
-                link: "/OrderGuide/"
-            },
-            
-            
-        ],
-        
+    {
+  text: "سفارشات",
+  collapsible: true,
+  children: [
+    {
+      text: "اطلاعات پایه و ثبت سفارش",
+      collapsible: true,
+      children: [
+        { text: "اطلاعات پایه سفارش", link: "/Orders/#basicInfo" },
+        { text: "ثبت سفارش", link: "/Orders/#createOrder" }
+      ]
     },
+    {
+      text: "جزییات سفارش",
+      collapsible: true,
+      children: [
+        { text: "جزییات سفارشات", link: "/Orders/#orderDetails" },
+        { text: "جزییات سفارشات HTML", link: "/Orders/#orderList" },
+        { text: "جزییات گروهی سفارشات HTML", link: "/Orders/#orderList" },
+        { text: "لیست سفارشات", link: "/Orders/#orderList" }
+      ]
+    },
+    {
+      text: " وضعیت سفارشات",
+      collapsible: true,
+      children: [
+        { text: "تغییر وضعیت سفارشات", link: "/Orders/#orderList" },
+        { text: "تغییر وضعیت گروهی سفارشات", link: "/Orders/#orderList" },
+        { text: "دریافت وضعیت سفارشات بدون فروشگاه", link: "/Orders/#orderList" },
+        { text: "آخرین تغییر وضعیت سفارش", link: "/Orders/#orderList" },
+        { text: "گروهی وضعیت و بارکد سفارشات", link: "/Orders/#orderList" },
+        { text: "تغییر وضعیت روزانه", link: "/Orders/#orderList" },
+        { text: "تغییر وضعیت در بازه مشخص", link: "/Orders/#orderList" }
+      ]
+    },
+    {
+      text: "لیبل و بسته پستی",
+      collapsible: true,
+      children: [
+        { text: "لیبل سفارشات", link: "/Orders/#orderList" },
+        { text: "لیبل با فیلتر تاریخ", link: "/Orders/#orderList" },
+        { text: "بسته‌های پستی", link: "/Orders/#orderList" },
+        { text: "کیوسک‌های سفارشات پستی", link: "/Orders/#orderList" },
+        { text: "محصولات سفارشات HTML", link: "/Orders/#orderList" },
+        { text: "بارکدهای آماده ارسال HTML", link: "/Orders/#orderList" }
+      ]
+    },
+    {
+      text: "راهنمای سفارشات",
+      link: "/OrderGuide/"
+    }
+  ]
+},
 
     {   text: "محصولات",
         collapsible: true,
