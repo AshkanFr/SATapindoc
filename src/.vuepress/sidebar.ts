@@ -109,7 +109,7 @@ export default sidebar([
         collapsible: true,
         children: [
             {
-                text: " درگاه بانکی - افزایش اعتبار) ", 
+                text: " درگاه بانکی - افزایش اعتبار ", 
                 link: "/Financial/#bankPortal"
             },
             {
@@ -122,6 +122,27 @@ export default sidebar([
             },
         ],
         
+    },
+
+    {   text: "مشتریان",
+        collapsible: true,
+        children: [
+            {
+                text: "لیست مشتریان", 
+                link: "/Customer/#bankPortal"
+            },
+            {
+                text: "لیست دسته بندی مشتریان",
+                link: "/Customer/#customerCTGList"
+            },
+            
+        ],
+        
+    },
+
+    {
+        text: "کارمندان",
+        link: "/Employee/",
     },
 
     {

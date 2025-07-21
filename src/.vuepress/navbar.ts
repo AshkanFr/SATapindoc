@@ -35,10 +35,15 @@ export default navbar([
         link: "/Orders/",
     },
 
+    {
+        text: "کد خطاها",
+        link: "/Errors/",
+    },
     
     {
         text: "تماس با ما",
         link: "/contact/",
     },
+
     
 ]);
