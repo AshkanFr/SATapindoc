@@ -36,7 +36,24 @@ sidebarDepth: 2
     </tr>
   </thead>
   <tbody>
-    <tr><td>int</td><td>نوع ثبت سفارش</td><td>false</td><td>false</td><td>true</td><td>register_type</td></tr>
+    <tr>
+  <td>int</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#register_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      نوع‌ ثبت‌ سفارش
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#register_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      register_type
+    </a>
+  </td>
+</tr>
     <tr><td>str</td><td>شناسه فروشگاه</td><td>false</td><td>false</td><td>true</td><td>shop_id</td></tr>
     <tr><td>str</td><td>آدرس گیرنده</td><td>false</td><td>false</td><td>true</td><td>address</td></tr>
     <tr><td>int</td><td>کد شهرستان</td><td>false</td><td>false</td><td>true</td><td>city_code</td></tr>
@@ -49,8 +66,42 @@ sidebarDepth: 2
     <tr><td>str</td><td>شماره موبایل</td><td>false</td><td>false</td><td>true</td><td>mobile</td></tr>
     <tr><td>str</td><td>شماره تلفن</td><td>false</td><td>true</td><td>true</td><td>phone</td></tr>
     <tr><td>int</td><td>کدپستی</td><td>false</td><td>false</td><td>true</td><td>postal_code</td></tr>
-    <tr><td>int</td><td>نوع پرداخت سفارش</td><td>false</td><td>false</td><td>true</td><td>pay_type</td></tr>
-    <tr><td>int</td><td>نوع سفارش</td><td>false</td><td>false</td><td>true</td><td>order_type</td></tr>
+    <tr>
+  <td>int</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#pay_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      نوع پرداخت
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#pay_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      pay_type
+    </a>
+  </td>
+</tr>
+    <tr>
+  <td>int</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#order_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      نوع سفارش
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#order_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      order_type
+    </a>
+  </td>
+</tr>
     <tr><td>int</td><td>شناسه بسته پستی</td><td>false</td><td>false</td><td>true</td><td>box_id</td></tr>
     <tr><td>int</td><td>وزن بسته بندی</td><td>false</td><td>false</td><td>true</td><td>package_weight</td></tr>
     <tr><td>int</td><td>کد معرف</td><td>false</td><td>false</td><td>false</td><td>presenter_code</td></tr>
@@ -61,7 +112,26 @@ sidebarDepth: 2
     <tr><td>int</td><td>وزن بسته بندی</td><td>false</td><td>true</td><td>true</td><td>weight</td></tr>
     <tr><td>int</td><td>شناسه یکتا محصول</td><td>false</td><td>true</td><td>true</td><td>product_id</td></tr>
     <tr><td>str</td><td>شناسه دستی سفارش</td><td>false</td><td>false</td><td>true</td><td>manual_id</td></tr>
-    <tr><td>bool</td><td>بیمه کالا ( ارسال این فیلد برای سفارش های آنلاین اجباری هست در صورت عدم انتخاب توسط سیستم مقدار دهی میشود.)</td><td>false</td><td>true</td><td>false</td><td>has_insurance</td></tr>
+    <tr>
+      <td>int</td>
+      <td>
+         <a class="linktoguide" href="/OrderGuide/#insurance_kind">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         بیمه کالا
+      </a>
+      <br/>
+      ( ارسال این فیلد برای سفارش های آنلاین اجباری هست در صورت عدم انتخاب توسط سیستم مقدار دهی میشود.)
+      </td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>
+      <a class="linktoguide" href="/OrderGuide/#insurance_kind">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         has_insurance
+         </a>
+         </td>
+    </tr>
     <tr><td>int</td><td>نوع محتوای کالا (در صورت وارد نکردن این فیلد، محتوای کالا بصورت پیشفرض عادی در نظر گرفته میشود)</td><td>false</td><td>false</td><td>false</td><td>content_type</td></tr>
     <tr><td>int</td><td>شناسه کیوسک جابار</td><td>false</td><td>true</td><td>true</td><td>kiosk_id</td></tr>
     <tr><td>int</td><td>مبلغ پیش پرداخت (درصورتی که نوع پرداخت، پرداخت در محل باشد قابل تنظیم میباشد(پیشفرض 0))</td><td>false</td><td>true</td><td>false</td><td>pre_paid_price</td></tr>
@@ -282,7 +352,24 @@ sidebarDepth: 2
     <tr><td>str</td><td>شناسه سفارش</td><td>false</td><td>false</td><td>true</td><td>id</td></tr>
     <tr><td>str</td><td>بارکد مرسوله</td><td>false</td><td>false</td><td>true</td><td>barcode</td></tr>
     <tr><td>int</td><td>شناسه یکتا سفارش</td><td>false</td><td>false</td><td>true</td><td>order_id</td></tr>
-    <tr><td>int</td><td>وضعیت مرسوله</td><td>false</td><td>false</td><td>true</td><td>status</td></tr>
+    <tr>
+  <td>int</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#status">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      وضعیت مرسوله
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#status">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      status
+    </a>
+  </td>
+</tr>
     <tr><td>str</td><td>نام گیرنده</td><td>false</td><td>false</td><td>true</td><td>first_name</td></tr>
     <tr><td>str</td><td>نام خانوادگی گیرنده</td><td>false</td><td>false</td><td>true</td><td>last_name</td></tr>
     <tr><td>int</td><td>کد استان گیرنده</td><td>false</td><td>false</td><td>true</td><td>state_code</td></tr>
@@ -292,10 +379,44 @@ sidebarDepth: 2
     <tr><td>str</td><td>ایمیل گیرنده</td><td>true</td><td>true</td><td>true</td><td>email</td></tr>
     <tr><td>str</td><td>شماره تماس گیرنده</td><td>true</td><td>true</td><td>true</td><td>phone</td></tr>
     <tr><td>str</td><td>شماره موبایل گیرنده</td><td>false</td><td>false</td><td>true</td><td>mobile</td></tr>
-    <tr><td>int</td><td>نحوه پرداخت</td><td>false</td><td>false</td><td>true</td><td>pay_type</td></tr>
+  <tr>
+  <td>int</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#pay_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      نوع پرداخت
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#pay_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      pay_type
+    </a>
+  </td>
+</tr>
     <tr><td>int</td><td>مبلغ بیمه</td><td>false</td><td>false</td><td>true</td><td>insurance_price</td></tr>
     <tr><td>int</td><td>مالیات بیمه</td><td>false</td><td>false</td><td>true</td><td>insurance_tax</td></tr>
-    <tr><td>int</td><td>نوع سفارش</td><td>false</td><td>false</td><td>true</td><td>order_type</td></tr>
+   <tr>
+  <td>int</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#order_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      نوع سفارش
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#order_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      order_type
+    </a>
+  </td>
+</tr>
     <tr><td>str</td><td>توضیحات</td><td>true</td><td>true</td><td>true</td><td>description</td></tr>
     <tr><td>int</td><td>وزن بسته بندی</td><td>false</td><td>false</td><td>true</td><td>package_weight</td></tr>
     <tr><td>int</td><td>وزن کل</td><td>false</td><td>false</td><td>true</td><td>total_weight</td></tr>
@@ -475,30 +596,60 @@ sidebarDepth: 2
       <td>false</td>
       <td>false</td>
       <td>last_name</td>
+      </tr>
+      <tr>
+      <td>int</td>
+      <td>
+    <a class="linktoguide" href="/OrderGuide/#pay_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      نوع پرداخت
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#pay_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      pay_type
+    </a>
+  </td>
     </tr>
     <tr>
       <td>int</td>
-      <td>نوع پرداخت سفارش</td>
-      <td>false</td>
-      <td>false</td>
-      <td>false</td>
-      <td>pay_type</td>
+      <td>
+    <a class="linktoguide" href="/OrderGuide/#order_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      نوع سفارش
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#order_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      order_type
+    </a>
+  </td>
     </tr>
     <tr>
       <td>int</td>
-      <td>نوع سفارش</td>
-      <td>false</td>
-      <td>false</td>
-      <td>false</td>
-      <td>order_type</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>وضعیت</td>
-      <td>false</td>
-      <td>false</td>
-      <td>true</td>
-      <td>status</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#status">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      وضعیت مرسوله
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#status">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      status
+    </a>
+  </td>
     </tr>
     <tr>
       <td>str</td>

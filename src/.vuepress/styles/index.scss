@@ -237,3 +237,17 @@ h1, h2, h3, h4, h5, h6, p, div, li, a {
   height: 225px;
   
 }
+.linktoguide {
+  color:#5C7CFA ;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem; /* فاصله بین آیکون و متن */
+  text-decoration: none; /* اختیاری: حذف خط زیر لینک */
+  direction: rtl; /* برای راست‌چین بودن محتوا */
+}
+
+.linktoguide .link-icon {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
