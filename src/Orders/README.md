@@ -132,9 +132,29 @@ sidebarDepth: 2
          </a>
          </td>
     </tr>
-    <tr><td>int</td><td>نوع محتوای کالا (در صورت وارد نکردن این فیلد، محتوای کالا بصورت پیشفرض عادی در نظر گرفته میشود)</td><td>false</td><td>false</td><td>false</td><td>content_type</td></tr>
+    <tr>
+      <td>int</td>
+      <td>
+         <a class="linktoguide" href="/OrderGuide/#content_type">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         نوع محتوای کالا
+      </a>
+      <br/>
+      (در صورت وارد نکردن این فیلد، محتوای کالا بصورت پیشفرض عادی در نظر گرفته میشود)
+      </td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>
+      <a class="linktoguide" href="/OrderGuide/#content_type">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         content_type
+         </a>
+         </td>
+    </tr>
+    <!-- <tr><td>int</td><td>نوع محتوای کالا (در صورت وارد نکردن این فیلد، محتوای کالا بصورت پیشفرض عادی در نظر گرفته میشود)</td><td>false</td><td>false</td><td>false</td><td>content_type</td></tr>
     <tr><td>int</td><td>شناسه کیوسک جابار</td><td>false</td><td>true</td><td>true</td><td>kiosk_id</td></tr>
-    <tr><td>int</td><td>مبلغ پیش پرداخت (درصورتی که نوع پرداخت، پرداخت در محل باشد قابل تنظیم میباشد(پیشفرض 0))</td><td>false</td><td>true</td><td>false</td><td>pre_paid_price</td></tr>
+    <tr><td>int</td><td>مبلغ پیش پرداخت (درصورتی که نوع پرداخت، پرداخت در محل باشد قابل تنظیم میباشد(پیشفرض 0))</td><td>false</td><td>true</td><td>false</td><td>pre_paid_price</td></tr> -->
   </tbody>
 </table>
 <!-- ---------------------- -->

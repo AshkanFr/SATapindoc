@@ -391,35 +391,38 @@ sidebarDepth: 2
 }
 
 ```
-::: info نکته
-
+::: info راهنمایی
+وضعیت فروشگاه ها
 <div class="info-box">
-  <table>
-  <thead>
-    <tr>
-      <th>title</th>
-      <th>code</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>غیر فعال</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>فعال</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>مسدود شده </td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>ارسال اطلاعات به پست</td>
-      <td>3</td>
-    </tr>
-  </tbody>
-</table>
+  <table style="border-collapse: collapse; text-align: center;">
+    <thead>
+      <tr>
+        <th colspan="2">status</th>
+      </tr>
+      <tr>
+        <th>value</th>
+        <th>key</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>غیرفعال</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>فعال</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>مسدود شده</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>ارسال اطلاعات به پست</td>
+        <td>3</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 :::
