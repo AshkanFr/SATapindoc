@@ -76,13 +76,13 @@ export default sidebar([
       text: " وضعیت سفارشات",
       collapsible: true,
       children: [
-        { text: "تغییر وضعیت سفارشات", link: "/Orders/#orderList" },
-        { text: "تغییر وضعیت گروهی سفارشات", link: "/Orders/#orderList" },
-        { text: "دریافت وضعیت سفارشات بدون فروشگاه", link: "/Orders/#orderList" },
-        { text: "آخرین تغییر وضعیت سفارش", link: "/Orders/#orderList" },
-        { text: "گروهی وضعیت و بارکد سفارشات", link: "/Orders/#orderList" },
-        { text: "تغییر وضعیت روزانه", link: "/Orders/#orderList" },
-        { text: "تغییر وضعیت در بازه مشخص", link: "/Orders/#orderList" }
+        { text: "تغییر وضعیت سفارشات", link: "/Orders/OrderStatus/#changeOrderStatus" },
+        { text: "تغییر وضعیت گروهی سفارشات", link: "/Orders/OrderStatus/#changeOrderGroupStatus" },
+        { text: "دریافت وضعیت سفارشات بدون فروشگاه", link: "/Orders/OrderStatus/#getOrderWhitoutShop" },
+        { text: "آخرین تغییر وضعیت سفارش", link: "/Orders/OrderStatus/#lastChangedStatus" },
+        { text: "لیست وضعیت و بارکد گروهی سفارشات", link: "/Orders/OrderStatus/#statusAndBarcodeGroupOrder" },
+        { text: "تغییر وضعیت روزانه", link: "/Orders/OrderStatus/#dailyChangeStatus" },
+        { text: "تغییر وضعیت در بازه مشخص", link: "/Orders/OrderStatus/#changeStatusRightSpan" }
       ]
     },
     {
