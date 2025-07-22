@@ -109,7 +109,7 @@ sidebarDepth: 2
     <tr><td>int</td><td>تخفیف محصول</td><td>false</td><td>false</td><td>true</td><td>discount</td></tr>
     <tr><td>int</td><td>مبلغ محصول</td><td>false</td><td>true</td><td>true</td><td>price</td></tr>
     <tr><td>int</td><td>نام محصول</td><td>false</td><td>true</td><td>true</td><td>title</td></tr>
-    <tr><td>int</td><td>وزن کالا</td><td>false</td><td>true</td><td>true</td><td>weight</td></tr>
+    <tr><td>int</td><td>وزن بسته بندی</td><td>false</td><td>true</td><td>true</td><td>weight</td></tr>
     <tr><td>int</td><td>شناسه یکتا محصول</td><td>false</td><td>true</td><td>true</td><td>product_id</td></tr>
     <tr><td>str</td><td>شناسه دستی سفارش</td><td>false</td><td>false</td><td>true</td><td>manual_id</td></tr>
     <tr>
@@ -152,6 +152,9 @@ sidebarDepth: 2
          </a>
          </td>
     </tr>
+    <!-- <tr><td>int</td><td>نوع محتوای کالا (در صورت وارد نکردن این فیلد، محتوای کالا بصورت پیشفرض عادی در نظر گرفته میشود)</td><td>false</td><td>false</td><td>false</td><td>content_type</td></tr>
+    <tr><td>int</td><td>شناسه کیوسک جابار</td><td>false</td><td>true</td><td>true</td><td>kiosk_id</td></tr>
+    <tr><td>int</td><td>مبلغ پیش پرداخت (درصورتی که نوع پرداخت، پرداخت در محل باشد قابل تنظیم میباشد(پیشفرض 0))</td><td>false</td><td>true</td><td>false</td><td>pre_paid_price</td></tr> -->
   </tbody>
 </table>
 <!-- ---------------------- -->
