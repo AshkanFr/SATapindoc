@@ -69,7 +69,7 @@ export default sidebar([
         { text: "جزییات سفارشات", link: "/Orders/OrderDetail/#orderDetails" },
         { text: "جزییات سفارشات HTML", link: "/Orders/#orderList" },
         { text: "جزییات گروهی سفارشات HTML", link: "/Orders/#orderList" },
-        { text: "لیست سفارشات", link: "/Orders/#orderList" }
+        { text: "لیست سفارشات", link: "/Orders/OrderDetail/#orderList" }
       ]
     },
     {

@@ -222,6 +222,239 @@ sidebarDepth: 2
 <!-- closing middle -->
 <!-- closing part_2 -->
 </div>
+<div class="middle">
+<div class="right-section">
+
+<h2 id="orderList">لیست سفارشات</h2>
+توضیحات راجع به لیست سفارشات
+
+<table>
+  <thead>
+    <tr>
+      <th>type</th>
+      <th>description</th>
+      <th>allow blank</th>
+      <th>allow null</th>
+      <th>required</th>
+      <th>field</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>str</td>
+      <td>شناسه فروشگاه</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>shop_id</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>تعداد آیتم ها جهت نمایش در صفحه</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>count</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>شماره صفحه</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>page</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>شناسه یکتا سفارش</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>order_id</td>
+    </tr>
+    <tr>
+      <td>str</td>
+      <td>بارکد</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>barcode</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>کد شهرستان</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>city_code</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>کد استان</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>province_code</td>
+    </tr>
+    <tr>
+      <td>str</td>
+      <td>نام</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>first_name</td>
+    </tr>
+    <tr>
+      <td>str</td>
+      <td>نام خانوادگی</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>last_name</td>
+      </tr>
+      <tr>
+      <td>int</td>
+      <td>
+    <a class="linktoguide" href="/OrderGuide/#pay_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      نوع پرداخت
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#pay_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      pay_type
+    </a>
+  </td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>
+    <a class="linktoguide" href="/OrderGuide/#order_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      نوع سفارش
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#order_type">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      order_type
+    </a>
+  </td>
+    </tr>
+    <tr>
+      <td>int</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#status">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      وضعیت مرسوله
+    </a>
+  </td>
+  <td>false</td>
+  <td>false</td>
+  <td>true</td>
+  <td>
+    <a class="linktoguide" href="/OrderGuide/#status">
+      <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+      status
+    </a>
+  </td>
+    </tr>
+    <tr>
+      <td>str</td>
+      <td>تاریخ ثبت سفارش</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>created_at</td>
+    </tr>
+  </tbody>
+</table>
+<!-- ---------------- -->
+<!-- closing right-section -->
+</div>
+<div class="left-section">
+
+<div class="token">
+<span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/list</span>
+ <span class="badge post">POST</span>
+</div>
+
+##### نمونه جیسون جهت ارسال 
+
+```json
+{
+	"shop_id":"fc45949a-921d-4b4f-1ade-ab5180f7dcve",
+	"count":"10",
+	"page":"1"
+}
+
+
+
+```
+
+##### نمونه جیسون خروجی 
+
+```json
+{
+    "returns": {
+        "status": 200,
+        "message": "عملیات با موفقیت انجام شد."
+    },
+    "entries": {
+        "list": [
+            {
+                "id": "d95d0f45-6162-4ec3-bd29-09452c148b40",
+                "barcode": "21294720411963211126",
+                "order_id": 16013,
+                "status": 2,
+                "first_name": "my first name",
+                "last_name": "my last name",
+                "mobile": "09122222222",
+                "state_code": "2",
+                "city_code": "41",
+                "pay_type": "1",
+                "order_type": 0,
+                "created_at": "1398-05-13 12:23"
+            }
+        ],
+        "count": 1,
+        "page": 1,
+        "total_count": 15
+    }
+}
+
+
+```
+::: info نکته
+
+<div class="info-box">
+  فیلد تاریخ ایجاد باید بصورت یکی از فرمت های زیر باشد:
+
+<br/>
+{
+   "created_at": "1398-02-12 12:30"
+}
+
+
+{
+  "created_at": "1398-02-12"
+}
+</div>
+
+:::
+<!-- closing left section -->
+</div>
+
+<!-- closing middle -->
+<!-- closing part_3 -->
+</div>
 <!-- closing container -->
 </div>
 
