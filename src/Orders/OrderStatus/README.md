@@ -714,10 +714,6 @@ sidebarDepth: 2
 
 
 
-
-
-
-
 <div  class="middle">
 
 <div class="right-section">
