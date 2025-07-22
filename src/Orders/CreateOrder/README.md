@@ -9,6 +9,39 @@ sidebarDepth: 2
 <h2 id="basicInfo" style="position: relative; padding-top: 80px; margin-top: -50px;">
   اطلاعات پایه ثبت سفارشات
 </h2>
+برای ثبت سفارش در تاپین،نیاز به ثبت اطلاعات پایه زیر دارید:
+نام گیرنده
+نام خانوادگی گیرنده
+کد استان
+کد شهرستان
+آدرس دقیق گیرنده
+کد پستی
+شماره موبایل
+شماره تلفن ثابت
+ایمیل
+توضیحات
+کد معرف
+نام محصول
+تعداد محصول
+تخفیف محصول
+مبلغ محصول
+وزن کالا
+وزن بسته بندی
+شناسه یکتا محصول
+شناسه دستی سفارش
+شناسه بسته پستی 
+شناسه کیوسک جابار
+نوع محتوای کالا
+نوع ثبت سفارش
+نوع پرداخت سفارش
+نوع سفارش
+بیمه کالا 
+شناسه فروشگاه 
+کد کارمند
+مبلغ پیش پرداخت
+
+
+
 
 <!-- start of createOrder -->
 
@@ -103,14 +136,25 @@ sidebarDepth: 2
     </a>
   </td>
 </tr>
-    <tr><td>int</td><td>شناسه بسته پستی</td><td>false</td><td>false</td><td>true</td><td>box_id</td></tr>
+    <tr><td>int</td>
+    <td><a class="linktoguide" href="/Orders/CreateOrder/#packagesList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه بسته پستی
+      </a></td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td><a class="linktoguide" href="/Orders/CreateOrder/#packagesList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+          box_id 
+      </a></td></tr>
     <tr><td>int</td><td>وزن بسته بندی</td><td>false</td><td>false</td><td>true</td><td>package_weight</td></tr>
     <tr><td>int</td><td>کد معرف</td><td>false</td><td>false</td><td>false</td><td>presenter_code</td></tr>
     <tr><td>int</td><td>تعداد محصول</td><td>false</td><td>false</td><td>true</td><td>count</td></tr>
     <tr><td>int</td><td>تخفیف محصول</td><td>false</td><td>false</td><td>true</td><td>discount</td></tr>
     <tr><td>int</td><td>مبلغ محصول</td><td>false</td><td>true</td><td>true</td><td>price</td></tr>
     <tr><td>int</td><td>نام محصول</td><td>false</td><td>true</td><td>true</td><td>title</td></tr>
-    <tr><td>int</td><td>وزن بسته بندی</td><td>false</td><td>true</td><td>true</td><td>weight</td></tr>
+    <tr><td>int</td><td>وزن کالا</td><td>false</td><td>true</td><td>true</td><td>weight</td></tr>
     <tr><td>int</td><td>شناسه یکتا محصول</td><td>false</td><td>true</td><td>true</td><td>product_id</td></tr>
     <tr><td>str</td><td>شناسه دستی سفارش</td><td>false</td><td>false</td><td>true</td><td>manual_id</td></tr>
     <tr>
@@ -153,6 +197,19 @@ sidebarDepth: 2
          </a>
          </td>
     </tr>
+    <tr><td>int</td>
+    <td><a class="linktoguide" href="/Orders/CreateOrder/#kioskList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه کیوسک جابار
+      </a></td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td><a class="linktoguide" href="/Orders/CreateOrder/#kioskList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+          kiosk_id
+      </a></td></tr>
+    <tr><td>int</td><td>مبلغ پیش‌ پرداخت(در صورتی که نوع پرداخت، پرداخت در محل باشد قابل تنظیم می‌باشد)</td><td>false</td><td>true</td><td>false</td><td>pre_paid_price</td></tr>
 
   </tbody>
 </table>
@@ -238,7 +295,9 @@ sidebarDepth: 2
 </div>
 
 <div class="left-section">
-
+<br/>
+<br/>
+<br/><br/><br/><br/><br/><br/>
 <div class="token">
 <span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/register</span>
  <span class="badge post">POST</span>
@@ -404,7 +463,8 @@ sidebarDepth: 2
 
 <h2 id="kioskList">لیست کیوسک های سفارشات پستی</h2>
 
- توضیحات لیست کیوسک های سفارشات پستی  
+ در صورت نیاز به توزیع سفارشات پستی در لاکر های جابار، در زمان ثبت سفارش میبایست کیوسک مدنظر جهت توزیع مشخص گردد.<br/>
+برای دریافت لیست کیوسک های جابار مربوط به شهر خود، میتوانید به وب سرویس روبرو با متد درج شده درخواست ارسال کنید. 
  
 <br/>
 <br/>
