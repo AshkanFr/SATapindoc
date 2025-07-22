@@ -89,10 +89,10 @@ export default sidebar([
       children: [
         { text: "لیبل سفارشات", link: "/Orders/#orderList" },
         { text: "لیبل با فیلتر تاریخ", link: "/Orders/#orderList" },
-        { text: "بسته‌های پستی", link: "/Orders/#orderList" },
+        { text: "لیست بسته‌های پستی", link: "/Orders/#orderList" },
         { text: "کیوسک‌های سفارشات پستی", link: "/Orders/#orderList" },
         { text: "محصولات سفارشات HTML", link: "/Orders/#orderList" },
-        { text: "بارکدهای آماده ارسال HTML", link: "/Orders/#orderList" }
+        { text: "بارکدهای سفارشات آماده ارسال HTML", link: "/Orders/#orderList" }
       ]
     },
     {
