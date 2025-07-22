@@ -52,11 +52,14 @@ export default sidebar([
   text: "سفارشات",
   collapsible: true,
   children: [
-    {
-      text: "اطلاعات پایه و ثبت سفارش",
-      collapsible: true,
-      children: [
-        { text: "اطلاعات پایه سفارش", link: "/Orders/CreateOrder/#basicInfo" },
+      {
+          text: "راهنمایی و ثبت سفارش",
+          collapsible: true,
+          children: [
+              {
+                text: "راهنمای ثبت سفارشات",
+                link: "/Orders/OrderGuide/"
+              },
         { text: "ثبت سفارش", link: "/Orders/CreateOrder/#createOrder" },
         { text: "لیست بسته‌های پستی", link: "/Orders/CreateOrder/#packagesList" },
         { text: "کیوسک‌های سفارشات پستی", link: "/Orders/CreateOrder/#kioskList" },
@@ -95,10 +98,6 @@ export default sidebar([
         { text: "بارکدهای سفارشات آماده ارسال HTML", link: "/Orders/#orderList" }
       ]
     },
-    {
-      text: "راهنمای سفارشات",
-      link: "/Orders/OrderGuide/"
-    }
   ]
 },
 
