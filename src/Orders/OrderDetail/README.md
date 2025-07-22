@@ -7,6 +7,7 @@ sidebarDepth: 2
 <div class="container">
 
 # جزییات سفارش  
+
 <hr>
 شناسه دستی سفارش:این شناسه باید به صورت یکتا توسط فروشگاه سمت سامانه ارسال گردد.در صورتی که سفارش دیگری با شناسه دستی ارسالی در پنل فروشگاه ثبت شده باشد،اطلاعات سفارش قبلی در این وب سرویس به فروشگاه بازگردانده میشود.
 
@@ -15,9 +16,9 @@ sidebarDepth: 2
 
 <div class="right-section">
 
-<h2 id="orderDetails">جزئیات سفارش</h2>
+<h2 id="orderDetails">جزییات سفارش</h2>
 
-توضیحات جزئیات سفارش
+توضیحات جزییات سفارش
 <!-- ------- -->
 <br/>
 <br/>
@@ -153,6 +154,7 @@ sidebarDepth: 2
  
 <!-- closing right section -->
 </div>
+
 <div class="left-section">
 
 <div class="token">
@@ -220,8 +222,146 @@ sidebarDepth: 2
 <!-- closing left section -->
 </div>
 <!-- closing middle -->
+<!-- closing part_1 -->
+</div>
+
+<div class="middle">
+
+<div class="right-section">
+
+<h2 id="ordeHTMLDetails">جزئیات سفارشات به صورت HTML</h2>
+
+توضیحات جزئیات سفارش به صورت html
+<!-- ------- -->
+<br/>
+<br/>
+<table>
+  <thead>
+    <tr>
+      <th>type</th>
+      <th>description</th>
+      <th>allow blank</th>
+      <th>allow null</th>
+      <th>required</th>
+      <th>field</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>str</td>
+      <td>شناسه فروشگاه</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>shop_id</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>شناسه یکتا سفارش</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>order_id</td>
+    </tr>
+  </tbody>
+</table>
+<!-- ------- -->
+
+ 
+<!-- closing right section -->
+</div>
+<div class="left-section">
+
+<div class="token">
+<span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/detail/html</span>
+ <span class="badge post">POST</span>
+</div>
+
+##### نمونه جیسون جهت ارسال 
+
+```json
+{
+	"shop_id":"fc45949a-921d-4b4f-1ade-ab5180f7dcve",
+	"order_id":16013
+}
+```
+
+<!-- closing left section -->
+</div>
+<!-- closing middle -->
 <!-- closing part_2 -->
 </div>
+
+<div class="middle">
+
+<div class="right-section">
+
+<h2 id="orderGroupHTMLList">جزئیات گروهی سفارشات به صورت HTML</h2>
+
+توضیحات جزئیات گروهی سفارش به صورت html
+<!-- ------- -->
+<br/>
+<br/>
+<table>
+  <thead>
+    <tr>
+      <th>field</th>
+      <th>required</th>
+      <th>allow null</th>
+      <th>allow blank</th>
+      <th>description</th>
+      <th>type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>shop_id</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>شناسه فروشگاه</td>
+      <td>str</td>
+    </tr>
+    <tr>
+      <td>orders_id</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>شناسه یکتا سفارشات</td>
+      <td>List[int]</td>
+    </tr>
+  </tbody>
+</table>
+<!-- ------- -->
+
+ 
+<!-- closing right section -->
+</div>
+<div class="left-section">
+
+<div class="token">
+<span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/detail/html/bulk</span>
+ <span class="badge post">POST</span>
+</div>
+
+##### نمونه جیسون جهت ارسال 
+
+```json
+
+{
+	"shop_id":"fc45949a-921d-4b4f-1ade-ab5180f7dcve",
+	"orders_id":[16013]
+}
+
+```
+
+<!-- closing left section -->
+</div>
+<!-- closing middle -->
+<!-- closing part_3 -->
+</div>
+
+
 <div class="middle">
 <div class="right-section">
 
@@ -453,10 +593,11 @@ sidebarDepth: 2
 </div>
 
 <!-- closing middle -->
-<!-- closing part_3 -->
+<!-- closing part_4 -->
 </div>
 <!-- closing container -->
 </div>
+
 
 
 
