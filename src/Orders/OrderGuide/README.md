@@ -11,8 +11,10 @@ sidebarDepth: 2
 <ul>
   <li>نام گیرنده</li>
   <li>نام خانوادگی گیرنده</li>
-  <li>کد استان</li>
-  <li>کد شهرستان</li>
+  <li>کد استان: برای دریافت کد استان به قسمت <a class="linktoguide" href="/ProvinceAndCitiesList/#getProvinceList"><img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />گرفتن لیست استان‌ها</a>
+  مراجعه نمایید.</li>
+  <li>کد شهرستان: <a class="linktoguide" href="/ProvinceAndCitiesList/#getCitiesList"><img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />گرفتن لیست شهرها</a>
+  مراجعه نمایید.</li>
   <li>آدرس دقیق گیرنده</li>
   <li>کد پستی</li>
   <li>شماره موبایل</li>
