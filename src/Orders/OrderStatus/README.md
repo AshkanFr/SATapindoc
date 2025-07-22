@@ -267,7 +267,7 @@ sidebarDepth: 2
 
 <div class="right-section">
 
-<h2 id="changeOrderStatus">دریافت وضعیت سفارشات بدون فروشگاه</h2>
+<h2 id="getOrderWhitoutShop">دریافت وضعیت سفارشات بدون فروشگاه</h2>
 
   توضیحات برای وضعیت سفارشات بدون فروشگاه   
  
@@ -352,7 +352,7 @@ sidebarDepth: 2
 <div class="middle">
 <div class="right-section">
 
-<h2 id="getOrderWhitoutShop">دریافت آخرین تغییر وضعیت سفارش</h2>
+<h2 id="lastChangedStatus">دریافت آخرین تغییر وضعیت سفارش</h2>
  توضیحاتی راجع به گرفتن آخرین تغییر وضعیت سفارشات         
 
 <table>
@@ -462,7 +462,7 @@ sidebarDepth: 2
 
 <div class="right-section">
 
-<h2 id="changeOrderStatus">لیست وضعیت و بارکد سفارشات</h2>
+<h2 id="statusAndBarcodeGroupOrder">لیست وضعیت و بارکد سفارشات</h2>
 
  توضیحات برای وضعیت و بارکد سفارشات   
  
