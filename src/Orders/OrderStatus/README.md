@@ -598,6 +598,253 @@ sidebarDepth: 2
 <!-- closing part_5 -->
 </div>
 
+
+
+
+<div  class="middle">
+
+<div class="right-section">
+
+<h2 id="dailyChangeStatus">دریافت آخرین تغییر وضعیت سفارشات در بازه روزانه</h2>
+
+ توضیحات برای دریافت آخرین تغییر وضعیت سفارشات در بازه روزانه    
+ 
+<br/>
+<br/>
+<br/>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>type</th>
+      <th>description</th>
+      <th>allow blank</th>
+      <th>allow null</th>
+      <th>required</th>
+      <th>field</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>str</td>
+      <td>شناسه فروشگاه</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>shop_id</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>تعداد آیتم ها جهت نمایش در صفحه</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>count</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>شماره صفحه</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>page</td>
+    </tr>
+    <tr>
+      <td>str</td>
+      <td>تاریخ</td>
+      <td>false</td>
+      <td>false</td>
+      <td>date</td>
+      <td>date</td>
+    </tr>
+  </tbody>
+</table>
+<!-- ---------------------- -->
+
+<!-- closing right section -->
+</div>
+
+<div class="left-section">
+
+<div class="token">
+<span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/change-status/report</span>
+ <span class="badge post">POST</span>
+</div>
+
+##### نمونه جیسون جهت ارسال
+```json
+
+{
+    "shop_id": "590a71b2-5cf5-45xf-9561-57b854e08972",
+    "count": 10,
+    "page": 1,
+    "date": "1402-07-26",
+}
+
+```
+
+##### نمونه جیسون خروجی 
+```json
+{
+    "returns": {
+        "status": 200,
+        "message": "عملیات با موفقیت انجام شد."
+    },
+    "entries": {
+        "list": [
+           {
+                "barcode": "012352312312162402033147",
+                "order_id": 2331,
+                "id": "ffe026a8-0c0a-4dae-85cf-e5164c59d9b8",
+                "status": 0
+            }
+        ],
+        "count": 1,
+        "page": 1,
+        "total_count": 1
+    }
+}
+```
+<!-- closing left -->
+</div> 
+<!-- closing middle -->. 
+<!-- closing part_6 -->
+</div>
+
+
+
+
+
+
+
+<div  class="middle">
+
+<div class="right-section">
+
+<h2 id="changeStatusRightSpan">دریافت آخرین تغییر وضعیت سفارشات در بازه تاریخی مشخص</h2>
+
+توضیحاتی برای دریافت آخرین تغییر وضعیت سفارشات در بازه تاریخی مشخص
+ 
+<br/>
+<br/>
+<br/>
+
+<table>
+  <thead>
+    <tr>
+      <th>type</th>
+      <th>description</th>
+      <th>allow blank</th>
+      <th>allow null</th>
+      <th>required</th>
+      <th>field</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>str</td>
+      <td>شناسه فروشگاه</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>shop_id</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>تعداد آیتم ها جهت نمایش در صفحه</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>count</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>شماره صفحه</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>page</td>
+    </tr>
+    <tr>
+      <td>str</td>
+      <td>از تاریخ</td>
+      <td>false</td>
+      <td>false</td>
+      <td>from_date</td>
+      <td>from_date</td>
+    </tr>
+    <tr>
+      <td>str</td>
+      <td>تا تاریخ</td>
+      <td>false</td>
+      <td>false</td>
+      <td>from_date</td>
+      <td>to_date</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ---------------------- -->
+
+<!-- closing right section -->
+</div>
+
+<div class="left-section">
+
+<div class="token">
+<span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/change-status/report/last-change-status</span>
+ <span class="badge post">POST</span>
+</div>
+
+##### نمونه جیسون جهت ارسال
+```json
+
+{
+    "shop_id": "590a71b2-5cf5-45xf-9561-57b854e08972",
+    "count": 10,
+    "page": 1,
+    "from_date": "2022-01-01",
+    "to_date": "2023-05-01"
+}
+
+```
+::: info توجه 
+در صورت عدم ارسال شناسه فروشگاه تمامی مرسولات کاربر نمایش داده می‌شود
+:::
+
+##### نمونه جیسون خروجی 
+```json
+{
+    "returns": {
+        "status": 200,
+        "message": "عملیات با موفقیت انجام شد."
+    },
+    "entries": {
+        "list": [
+           {
+                "barcode": "012352312312162402033147",
+                "order_id": 2331,
+                "id": "ffe026a8-0c0a-4dae-85cf-e5164c59d9b8",
+                "status": 0,
+                "last_change_status": "2023-01-31T11:58:22.146968",
+                "shop_id": "590a71b2-5cf5-45xf-9561-57b854e08972"
+            }
+        ],
+        "count": 1,
+        "page": 1,
+        "total_count": 1
+    }
+}
+```
+<!-- closing left -->
+</div> 
+<!-- closing middle -->. 
+<!-- closing part_7 -->
+</div>
+
+
+
 <!-- closing container -->
 </div>
 
