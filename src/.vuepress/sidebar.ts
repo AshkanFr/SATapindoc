@@ -44,7 +44,6 @@ export default sidebar([
                 { text: "تغییر وضعیت سفارشات", link: "/Orders/OrderStatus/#changeOrderStatus" },
                 { text: "تغییر وضعیت گروهی سفارشات", link: "/Orders/OrderStatus/#changeOrderGroupStatus" },
                 { text: "دریافت وضعیت سفارشات بدون فروشگاه", link: "/Orders/OrderStatus/#getOrderWhitoutShop" },
-                { text: "آخرین تغییر وضعیت سفارش", link: "/Orders/OrderStatus/#lastChangedStatus" },
                 { text: "لیست وضعیت و بارکد گروهی سفارشات", link: "/Orders/OrderStatus/#statusAndBarcodeGroupOrder" },
                 { text: "تغییر وضعیت روزانه", link: "/Orders/OrderStatus/#dailyChangeStatus" },
                 { text: "آخرین تغییر وضعیت در بازه مشخص", link: "/Orders/OrderStatus/#changeStatusRightSpan" }

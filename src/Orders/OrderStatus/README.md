@@ -57,6 +57,7 @@ sidebarDepth: 2
 </table>
 <!-- ---------------------- -->
 
+
 <table>
   <thead>
     <tr>
@@ -217,7 +218,12 @@ sidebarDepth: 2
 
 <h2 id="changeOrderGroupStatus">تغییر وضعیت گروهی سفارشات</h2>
 
-توضیحاتی برای تغییر وضعیت گروهی سفارشات 
+به منظور تغییر وضعیت سفارشات به صورت گروهی، به وب سرویس روبرو با متد درج شده درخواست ارسال کنید.
+<br/>
+نتیجه وضعیت را میتوانید در <a class="linktoguide" href="/Tasks/#taskList">
+  <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+ لیست کارها 
+</a> مشاهده نمایید
 <br/>
 <br/>
 <table>
@@ -259,12 +265,17 @@ sidebarDepth: 2
   </tbody>
 </table>
 
-<br/>
- 
+
+::: info نکته
+
+ در صورت تغییر وضعیت سفارشات ``آماده به پرینت`` و ``اشتباه در اعلام آماده به ارسال`` ،هزینه ارسال کسر شده از پنل به صورت اتوماتیک به پنل بازگردانده نشده و جهت عودت هزینه بارکد سفارشات باید در سامانه تاپین در قالب تیکت ارسال شوند.
+:::
+
 <!-- closing right section -->
 </div>
 <div class="left-section">
-
+<br/>
+<br/>
 <div class="token">
 <span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/change-status/bulk</span>
  <span class="badge post">POST</span>
@@ -296,9 +307,6 @@ sidebarDepth: 2
 
 }
 ```
-::: info نکته
-نتیجه ثبت را در لیست کارها میتوانید مشاهده کنید
-:::
 
 <!-- closing left section -->
 </div>
@@ -313,12 +321,12 @@ sidebarDepth: 2
 
 <h2 id="getOrderWhitoutShop">دریافت وضعیت سفارشات بدون فروشگاه</h2>
 
-  توضیحات برای وضعیت سفارشات بدون فروشگاه   
- 
-<br/>
-<br/>
-<br/>
+  در صورت وجود بیش از یک فروشگاه با یک نام کاربری، به منظور دریافت آخرین وضعیت سفارشات بدون نیاز به شناسه فروشگاه، از وب سرویس روبرو اقدام نمایید.
 
+::: info نکته
+
+در هر درخواست امکان فراخوانی وضعیت حداکثر ۲۰۰ سفارش وجود دارد.
+:::
 
 <table>
   <thead>
@@ -391,129 +399,19 @@ sidebarDepth: 2
 <!-- closing middle -->. 
 <!-- closing part_3 -->
 </div>
-
-
-<div class="middle">
-<div class="right-section">
-
-<h2 id="lastChangedStatus">دریافت آخرین تغییر وضعیت سفارش</h2>
- توضیحاتی راجع به گرفتن آخرین تغییر وضعیت سفارشات         
-
-<table>
-  <thead>
-    <tr>
-      <th>type</th>
-      <th>description</th>
-      <th>allow blank</th>
-      <th>allow null</th>
-      <th>required</th>
-      <th>field</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>str</td>
-      <td>شناسه فروشگاه</td>
-      <td>false</td>
-      <td>false</td>
-      <td>true</td>
-      <td>shop_id</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>تعداد آیتم ها جهت نمایش در صفحه</td>
-      <td>false</td>
-      <td>false</td>
-      <td>true</td>
-      <td>count</td>
-    </tr>
-    <tr>
-      <td>int</td>
-      <td>شماره صفحه</td>
-      <td>false</td>
-      <td>false</td>
-      <td>true</td>
-      <td>page</td>
-    </tr>
-    <tr>
-      <td>str</td>
-      <td>تاریخ</td>
-      <td>false</td>
-      <td>false</td>
-      <td>date</td>
-      <td>date</td>
-    </tr>
-  </tbody>
-</table>
-<!-- ---------------- -->
-
-<!-- closing right-section -->
-</div>
-<div class="left-section">
-
-<div class="token">
-<span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/change-status/report</span>
- <span class="badge post">POST</span>
-</div>
-
-##### نمونه جیسون جهت ارسال 
-
-```json
-
-{
-    "shop_id": "630a71b3-5vf5-45bf-9561-57e854g08972",
-    "count": 10,
-    "page": 1,
-    "date": "1398-11-01"
-}
-
-```
-
-##### نمونه جیسون خروجی 
-
-```json
-{
-    "returns": {
-        "status": 200,
-        "message": "عملیات با موفقیت انجام شد."
-    },
-    "entries": {
-        "list": [
-            {
-                "barcode": "21123223455552333211",
-                "order_id": 15410,
-                "id": "630a71b3-5vf5-45bf-9561-57e854g08972",
-                "status": 0
-            }
-        ],
-        "count": 1,
-        "page": 1,
-        "total_count": 1
-    }
-}
-
-```
-
-<!-- closing left section -->
-</div>
-
-<!-- closing middle -->
-<!-- closing part_4 -->
-</div>
-
-
 <div  class="middle">
 
 <div class="right-section">
 
 <h2 id="statusAndBarcodeGroupOrder">لیست وضعیت و بارکد سفارشات</h2>
 
- توضیحات برای وضعیت و بارکد سفارشات   
+ از طریق وب سرویس روبرو امکان دریافت بارکد و وضعیت سفارشات با استفاده از شناسه سفارش میسر است.
  
-<br/>
-<br/>
-<br/>
+::: info نکته
 
+در هر درخواست امکان فراخوانی وضعیت حداکثر ۲۰۰ سفارش وجود دارد.
+
+:::
 
 <table>
   <thead>
@@ -651,7 +549,7 @@ sidebarDepth: 2
 
 <h2 id="dailyChangeStatus">دریافت آخرین تغییر وضعیت سفارشات در بازه روزانه</h2>
 
- توضیحات برای دریافت آخرین تغییر وضعیت سفارشات در بازه روزانه    
+ به منظور دریافت لیست سفارشات بر اساس تاریخ آخرین تغییر وضعیت آنها،از وب سرویس روبرو استفاده کنید. 
  
 <br/>
 <br/>
@@ -764,12 +662,13 @@ sidebarDepth: 2
 
 <h2 id="changeStatusRightSpan">دریافت آخرین تغییر وضعیت سفارشات در بازه تاریخی مشخص</h2>
 
-توضیحاتی برای دریافت آخرین تغییر وضعیت سفارشات در بازه تاریخی مشخص
- 
-<br/>
-<br/>
-<br/>
+به منظور دریافت لیست سفارشات بر اساس بازه تاریخی آخرین تغییر وضعیت از وب سرویس روبرو استفاده نمایید.
 
+::: info نکته
+
+ در صورت عدم ارسال شناسه فروشگاه،تمامی مرسولات کاربر نمایش داده میشود.
+
+:::
 <table>
   <thead>
     <tr>
@@ -849,10 +748,6 @@ sidebarDepth: 2
 }
 
 ```
-::: info توجه 
-در صورت عدم ارسال شناسه فروشگاه تمامی مرسولات کاربر نمایش داده می‌شود
-:::
-
 ##### نمونه جیسون خروجی 
 ```json
 {
