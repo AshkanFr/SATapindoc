@@ -243,11 +243,7 @@ h1, h2, h3, h4, h5, h6, p, div, li, a {
   width: auto;
   vertical-align: middle;
 }
-// a.inline-fix {
-//   position: relative;
-//   top: 1px;
-//   vertical-align: middle;
-// }
+
 
 
 .vp-sidebar {
@@ -334,14 +330,67 @@ h1, h2, h3, h4, h5, h6, p, div, li, a {
 
 
 
+// ----------------------------
 
 
 
 
 
 
+// .roadmap-container {
+//   background: #1b1b1f;
+//   padding: 2rem;
+//   color: white;
+//   font-family: "BYekan", sans-serif;
+// }
 
+// .truck img {
+//   width: 100px;
+//   margin-bottom: 2rem;
+// }
 
+// .stations {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 2rem;
+// }
+
+// .station {
+//   background-color: #202127;
+//   border-right: 5px solid #2288f5;
+//   padding: 1rem;
+//   border-radius: 10px;
+//   transition: transform 0.2s ease;
+// }
+
+// .station:hover {
+//   transform: translateX(-5px);
+// }
+
+// .station h3 {
+//   color: #70b8ff;
+//   font-size: 1.2rem;
+//   margin-bottom: 0.5rem;
+// }
+
+// .station ul {
+//   list-style: none;
+//   padding: 0;
+// }
+
+// .station li {
+//   margin: 0.3rem 0;
+// }
+
+// .station a {
+//   color: #5caeff;
+//   text-decoration: none;
+// }
+
+// .station a:hover {
+//   text-decoration: underline;
+//   color: #3f92e5;
+// }
 
 
 

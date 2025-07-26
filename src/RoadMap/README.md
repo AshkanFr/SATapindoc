@@ -1,17 +1,153 @@
----
+<style>
+
+    body {
+  background-color: #1e293b; /* رنگ پس‌زمینه تیره */
+  font-family: "BYekan", sans-serif;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.roadmap {
+  position: relative;
+  padding: 6rem 0;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.road {
+  height: 10px;
+  background: #6b7280;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.truck {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 80px;
+  height: 50px;
+  background-image: url('/assets/images/truck-yellow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: move-truck 12s linear infinite;
+}
+
+@keyframes move-truck {
+  0% { left: 0%; }
+  100% { left: 90%; }
+}
+
+.station {
+  position: absolute;
+  top: -130px;
+  width: 80px;
+  text-align: center;
+  z-index: 2;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #facc15; /* زرد مینیمال */
+  color: black;
+  border: 4px solid #000;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pole {
+  width: 4px;
+  height: 90px;
+  background-color: #9ca3af;
+  margin: 0 auto;
+  position: relative;
+  top: -4px;
+}
+
+.station-text {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.station-text a {
+  color: white;
+  text-decoration: none;
+}
+
+ </style>
+
+
+
+
+<div class="roadmap">
+  <div class="truck"></div>
+  <div class="road"></div>
+
+  <!-- ایستگاه ۱ -->
+  <div class="station" style="left: 8%;">
+    <div class="circle">۱</div>
+    <div class="pole"></div>
+    <div class="station-text"><a href="/Prerequisites/">پیش‌نیازها</a></div>
+  </div>
+
+  <!-- ایستگاه ۲ -->
+  <div class="station" style="left: 28%;">
+    <div class="circle">۲</div>
+    <div class="pole"></div>
+    <div class="station-text"><a href="/Pricing/">استعلام قیمت</a></div>
+  </div>
+
+  <!-- ایستگاه ۳ -->
+  <div class="station" style="left: 48%;">
+    <div class="circle">۳</div>
+    <div class="pole"></div>
+    <div class="station-text"><a href="/Orders/CreateOrder/">ثبت سفارش</a></div>
+  </div>
+
+  <!-- ایستگاه ۴ -->
+  <div class="station" style="left: 68%;">
+    <div class="circle">۴</div>
+    <div class="pole"></div>
+    <div class="station-text"><a href="/Orders/OrderLable/">لیبل و فاکتور</a></div>
+  </div>
+
+  <!-- ایستگاه ۵ -->
+  <div class="station" style="left: 88%;">
+    <div class="circle">۵</div>
+    <div class="pole"></div>
+    <div class="station-text"><a href="/Orders/OrderStatus/">مدیریت سفارشات</a></div>
+  </div>
+</div>
+
+
+
+
+<!-- ---
 title: نقشه راه
 index: true
 ---
 
+<ClientOnly>
+
 <div class="roadmap-container">
 
   <div class="truck">
-    <img src="/assets/images/truck.png" alt="کامیون پستی تاپین" />
+    <img src="/assets/images/TapinLogo.png" alt="کامیون پستی تاپین" />
   </div>
 
   <div class="stations">
 
-    <div class="station">
+<div class="station">
       <h3>۱. پیش‌نیازها</h3>
       <ul>
         <li><a href="/Tokens/#getToken">دریافت توکن</a></li>
@@ -26,21 +162,21 @@ index: true
       </ul>
     </div>
 
-    <div class="station">
+<div class="station">
       <h3>۲. استعلام قیمت</h3>
       <ul>
         <li><a href="/PriceCheck/">صفحه استعلام قیمت</a></li>
       </ul>
     </div>
 
-    <div class="station">
+<div class="station">
       <h3>۳. ثبت سفارش</h3>
       <ul>
         <li><a href="/Orders/CreateOrder/">مستندات ثبت سفارش</a></li>
       </ul>
     </div>
 
-    <div class="station">
+<div class="station">
       <h3>۴. لیبل و فاکتور</h3>
       <ul>
         <li><a href="/Orders/OrderLable/#orderLable">لیبل سفارشات</a></li>
@@ -48,7 +184,7 @@ index: true
       </ul>
     </div>
 
-    <div class="station">
+<div class="station">
       <h3>۵. مدیریت سفارش</h3>
       <ul>
         <li><a href="/Orders/OrderDetail/#orderList">لیست سفارشات</a></li>
@@ -61,70 +197,13 @@ index: true
   </div>
 </div>
 
+</ClientOnly>
+
+
+ -->
 
 
 
 
 
 
-
-
-
-<!-- 
-<h1 style="text-align: center;">🚚 نقشه راه توسعه‌دهندگان تاپین</h1>
-<p style="text-align: center;">در این مسیر، یک کامیون پستی از ایستگاه‌های کلیدی عبور می‌کند تا به هدف برسد</p>
-<hr/>
-
-<div style="display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto;">
-
-  <div style="background: #202127; border: 1px solid #444; border-radius: 10px; padding: 1rem;">
-    <h2>۱- پیش‌نیازها</h2>
-    <ul>
-      <li>📌 دریافت توکن و شناسه فروشگاه</li>
-      <li>📌 استان‌ها</li>
-      <li>📌 شهرها</li>
-      <li>📌 کیوسک‌های جابار</li>
-      <li>📌 بسته‌های پستی</li>
-      <li>📌 نوع پرداخت</li>
-      <li>📌 نوع سفارش</li>
-      <li>📌 نوع ثبت سفارش</li>
-      <li>📌 نوع محتوای سفارش</li>
-    </ul>
-  </div>
-
-  <div style="background: #202127; border: 1px solid #444; border-radius: 10px; padding: 1rem;">
-    <h2>۲- استعلام قیمت</h2>
-    <p>⏳ این بخش در آینده فعال خواهد شد.</p>
-  </div>
-
-
-  <div style="background: #202127; border: 1px solid #444; border-radius: 10px; padding: 1rem;">
-    <h2>۳- ثبت سفارش</h2>
-    <p>📦 ارسال سفارش همراه با اطلاعات کامل گیرنده، محصولات و پرداخت</p>
-  </div>
-
-
-  <div style="background: #202127; border: 1px solid #444; border-radius: 10px; padding: 1rem;">
-    <h2>۴- لیبل و فاکتور</h2>
-    <ul>
-      <li>🧾 دریافت فاکتور</li>
-      <li>🏷 دریافت لیبل سفارش</li>
-    </ul>
-  </div>
-
-
-  <div style="background: #202127; border: 1px solid #444; border-radius: 10px; padding: 1rem;">
-    <h2>۵- مدیریت سفارشات</h2>
-    <ul>
-      <li>🗑 حذف سفارش</li>
-      <li>📋 لیست سفارشات</li>
-      <li>🔍 جزییات سفارش</li>
-      <li>🖨 آماده پرینت</li>
-      <li>🚚 آماده ارسال</li>
-      <li>❗ اشتباه در اعلام ارسال</li>
-      <li>📦 سفارشات آماده ارسال</li>
-      <li>📈 وضعیت سفارشات</li>
-    </ul>
-  </div>
-
-</div> -->
