@@ -5,7 +5,7 @@ heroText: تاپین
 tagline: مستندات رسمی تاپین
 actions:
   - text: شروع کنید
-    link: /Connections/
+    link: /RoadMap/
     type: primary
   - text: تماس با ما
     link: /contact/
