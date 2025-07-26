@@ -16,7 +16,12 @@ sidebarDepth: 2
 
 <h2 id="changeOrderStatus">تغییر وضعیت سفارشات</h2>
 
- توضیحات برای وضعیت سفارشات   
+ برای تغییر وضعیت سفارشات، لازم است وضعیتی که مایل به تغییر به آن هستید را در درخواست خود به وب سرویس روبرو با متد درج شده ارسال کنید.
+ برای مشاهده وضعیت های سفارشات (status)، به بخش <a class="linktoguide" href="/Orders/OrderGuide/#status">
+  <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+  وضعیت سفارش 
+</a>
+         مراجعه کنید.
  
 <br/>
 <br/>
