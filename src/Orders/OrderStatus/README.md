@@ -5,29 +5,18 @@ sidebarDepth: 2
 ---
 
 <div class="container">
-
-# وضعیت سفارشات   
-<hr>
-توضیحاتی راجع به این صفحه 
-
 <div  class="middle">
 
 <div class="right-section">
 
 <h2 id="changeOrderStatus">تغییر وضعیت سفارشات</h2>
 
- برای تغییر وضعیت سفارشات، لازم است وضعیتی که مایل به تغییر به آن هستید را در درخواست خود به وب سرویس روبرو با متد درج شده ارسال کنید.
+ برای تغییر وضعیت سفارشات، لازم است وضعیت جدیدی (status)، که مایل به تغییر به آن هستید را در درخواست خود به وب سرویس روبرو با متد درج شده ارسال کنید.
  برای مشاهده وضعیت های سفارشات (status)، به بخش <a class="linktoguide" href="/Orders/OrderGuide/#status">
   <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
   وضعیت سفارش 
 </a>
-         مراجعه کنید.
- 
-<br/>
-<br/>
-<br/>
-
-
+ مراجعه کنید.
 <table>
   <thead>
     <tr>
@@ -130,11 +119,21 @@ sidebarDepth: 2
     </tr>
   </tbody>
 </table>
+
+::: info نکته
+
+نکته: در صورت تغییر وضعیت سفارشات آماده به پرینت و اشتباه در اعلام آماده به ارسال،هزینه ارسال کسر شده از پنل به صورت اتوماتیک به پنل بازگردانده نشده و جهت عودت هزینه بارکد سفارشات باید در سامانه تاپین در قالب تیکت ارسال شوند.
+
+
+
+
+:::
 <!-- closing right section -->
 </div>
 
 <div class="left-section">
-
+<br/>
+<br/>
 <div class="token">
 <span style="text-align: left">https://api.tapin.ir/api/v2/public/order/post/change-status</span>
  <span class="badge post">POST</span>
@@ -167,6 +166,46 @@ sidebarDepth: 2
     }
 }
 ```
+
+::: info نکته
+
+تغییر وضعیت سفارشات تنها به صورت زیر از سمت فروشگاه امکان پذیر است :
+<table>
+  <thead>
+    <tr>
+      <th> از وضعیت </th>
+      <th> به وضعیت</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> تحت بررسی</td>
+      <td> حذف شده</td>
+    </tr>
+    <tr>
+      <td> تحت بررسی</td>
+      <td> آماده به پرینت</td>
+    </tr>
+    <tr>
+      <td> آماده به پرینت</td>
+      <td> حذف شده</td>
+    </tr>
+    <tr>
+      <td> آماده به پرینت</td>
+      <td> آماده به ارسال </td>
+    </tr>
+    <tr>
+      <td> آماده به ارسال</td>
+      <td>اشتباه در اعلام آماده به ارسال </td>
+    </tr>
+    <tr>
+      <td>اشتباه در اعلام آماده به ارسال </td>
+      <td> حذف شده</td>
+    </tr>
+  </tbody>
+</table>
+:::
+
 <!-- closing left -->
 </div> 
 <!-- closing middle -->. 
