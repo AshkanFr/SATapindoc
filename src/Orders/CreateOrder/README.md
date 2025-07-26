@@ -50,10 +50,28 @@ sidebarDepth: 2
     </a>
   </td>
 </tr>
-    <tr><td>str</td><td>شناسه فروشگاه</td><td>false</td><td>false</td><td>true</td><td>shop_id</td></tr>
+    <tr><td>str</td><td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه فروشگاه
+      </a></td><td>false</td><td>false</td><td>true</td><td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        shop_id
+      </a></td></tr>
     <tr><td>str</td><td>آدرس گیرنده</td><td>false</td><td>false</td><td>true</td><td>address</td></tr>
-    <tr><td>int</td><td>کد شهرستان</td><td>false</td><td>false</td><td>true</td><td>city_code</td></tr>
-    <tr><td>int</td><td>کد استان</td><td>false</td><td>false</td><td>true</td><td>province_code</td></tr>
+    <tr><td>int</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getCitiesList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         کد شهرستان
+      </a></td><td>false</td><td>false</td><td>true</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getCitiesList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        city_code 
+      </a></td></tr>
+    <tr><td>int</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getProvinceList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         کد استان
+      </a></td><td>false</td><td>false</td><td>true</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getProvinceList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        province_code
+      </a></td></tr>
     <tr><td>str</td><td>توضیحات</td><td>false</td><td>true</td><td>true</td><td>description</td></tr>
     <tr><td>str</td><td>ایمیل</td><td>false</td><td>true</td><td>true</td><td>email</td></tr>
     <tr><td>int</td><td>کد کارمند</td><td>false</td><td>false</td><td>true</td><td>employee_code</td></tr>
@@ -110,13 +128,25 @@ sidebarDepth: 2
          <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
           box_id 
       </a></td></tr>
-    <tr><td>int</td><td>وزن بسته بندی</td><td>false</td><td>false</td><td>true</td><td>package_weight</td></tr>
+    <tr><td>int</td><td><a class="linktoguide" href="/Orders/OrderGuide/#weight">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         وزن بسته بندی
+      </a></td><td>false</td><td>false</td><td>true</td><td><a class="linktoguide" href="/Orders/OrderGuide/#weight">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         package_weight
+      </a></td></tr>
     <tr><td>int</td><td>کد معرف</td><td>false</td><td>false</td><td>false</td><td>presenter_code</td></tr>
     <tr><td>int</td><td>تعداد محصول</td><td>false</td><td>false</td><td>true</td><td>count</td></tr>
     <tr><td>int</td><td>تخفیف محصول</td><td>false</td><td>false</td><td>true</td><td>discount</td></tr>
     <tr><td>int</td><td>مبلغ محصول</td><td>false</td><td>true</td><td>true</td><td>price</td></tr>
     <tr><td>int</td><td>نام محصول</td><td>false</td><td>true</td><td>true</td><td>title</td></tr>
-    <tr><td>int</td><td>وزن کالا</td><td>false</td><td>true</td><td>true</td><td>weight</td></tr>
+    <tr><td>int</td><td><a class="linktoguide" href="/Orders/OrderGuide/#weight">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         وزن کالا
+      </a></td><td>false</td><td>true</td><td>true</td><td><a class="linktoguide" href="/Orders/OrderGuide/#weight">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        weight
+      </a></td></tr>
     <tr><td>int</td><td>شناسه یکتا محصول</td><td>false</td><td>true</td><td>true</td><td>product_id</td></tr>
     <tr><td>str</td><td><div class="tooltip-wrapper">
         شناسه دستی سفارش
@@ -368,7 +398,13 @@ sidebarDepth: 2
     </tr>
   </thead>
   <tbody>
-    <tr><td>str</td><td>شناسه فروشگاه</td><td>false</td><td>false</td><td>true</td><td>shop_id</td></tr>
+    <tr><td>str</td><td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه فروشگاه
+      </a></td><td>false</td><td>false</td><td>true</td><td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        shop_id
+      </a></td></tr>
   </tbody>
 </table> 
 <!-- closing right section -->
@@ -452,9 +488,27 @@ sidebarDepth: 2
     </tr>
   </thead>
   <tbody>
-    <tr><td>str</td><td>شناسه فروشگاه</td><td>false</td><td>false</td><td>true</td><td>shop_id</td></tr>
-     <tr><td>int</td><td>کد استان</td><td>false</td><td>false</td><td>true</td><td>province_code</td></tr>
-      <tr><td>int</td><td>کد شهرستان</td><td>false</td><td>false</td><td>true</td><td>city_code</td></tr>
+    <tr><td>str</td><td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه فروشگاه
+      </a></td><td>false</td><td>false</td><td>true</td><td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        shop_id
+      </a></td></tr>
+     <tr><td>int</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getProvinceList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         کد استان
+      </a></td><td>false</td><td>false</td><td>true</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getProvinceList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        province_code
+      </a></td></tr>
+      <tr><td>int</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getCitiesList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         کد شهرستان
+      </a></td><td>false</td><td>false</td><td>true</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getCitiesList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        city_code 
+      </a></td></tr>
   </tbody>
 </table> 
 <!-- closing right section -->

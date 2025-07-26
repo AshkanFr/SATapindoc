@@ -30,11 +30,17 @@ sidebarDepth: 2
   <tbody>
     <tr>
       <td>str</td>
-      <td>شناسه فروشگاه</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه فروشگاه
+      </a></td>
       <td>false</td>
       <td>false</td>
       <td>true</td>
-      <td>shop_id</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        shop_id
+      </a></td>
     </tr>
     <tr>
       <td>int</td>
@@ -243,11 +249,17 @@ sidebarDepth: 2
   <tbody>
     <tr>
       <td>str</td>
-      <td>شناسه فروشگاه</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه فروشگاه
+      </a></td>
       <td>false</td>
       <td>false</td>
       <td>true</td>
-      <td>shop_id</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        shop_id
+      </a></td>
     </tr>
     <tr>
       <td>int</td>
@@ -299,30 +311,36 @@ sidebarDepth: 2
 <table>
   <thead>
     <tr>
-      <th>field</th>
-      <th>required</th>
-      <th>allow null</th>
-      <th>allow blank</th>
-      <th>description</th>
       <th>type</th>
+      <th>description</th>
+      <th>allow blank</th>
+      <th>allow null</th>
+      <th>required</th>
+      <th>field</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>shop_id</td>
-      <td>true</td>
-      <td>false</td>
-      <td>false</td>
-      <td>شناسه فروشگاه</td>
       <td>str</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه فروشگاه
+      </a></td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        shop_id
+      </a></td>
     </tr>
     <tr>
-      <td>orders_id</td>
-      <td>true</td>
-      <td>false</td>
-      <td>false</td>
-      <td>شناسه یکتا سفارشات</td>
       <td>List[int]</td>
+      <td>شناسه یکتا سفارشات</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>orders_id</td>
     </tr>
   </tbody>
 </table>
@@ -377,11 +395,17 @@ sidebarDepth: 2
   <tbody>
     <tr>
       <td>str</td>
-      <td>شناسه فروشگاه</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه فروشگاه
+      </a></td>
       <td>false</td>
       <td>false</td>
       <td>true</td>
-      <td>shop_id</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        shop_id
+      </a></td>
     </tr>
     <tr>
       <td>int</td>
