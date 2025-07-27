@@ -1,135 +1,139 @@
 <style>
+  .roadmap-container {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-color: transparent;
+  }
 
-    body {
-  background-color: #1e293b; /* رنگ پس‌زمینه تیره */
-  font-family: "BYekan", sans-serif;
-  direction: rtl;
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
-.roadmap {
-  position: relative;
-  padding: 6rem 0;
-  max-width: 1400px;
-  margin: auto;
-}
-
-.road {
-  height: 10px;
-  background: #6b7280;
-  border-radius: 4px;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-.truck {
-  position: absolute;
-  top: -60px;
-  left: 0;
-  width: 80px;
-  height: 50px;
-  background-image: url('/assets/images/truck-yellow.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  animation: move-truck 12s linear infinite;
-}
-
-@keyframes move-truck {
-  0% { left: 0%; }
-  100% { left: 90%; }
-}
-
-.station {
-  position: absolute;
-  top: -130px;
-  width: 80px;
-  text-align: center;
-  z-index: 2;
-}
-
-.circle {
-  width: 50px;
-  height: 50px;
-  background-color: #facc15; /* زرد مینیمال */
-  color: black;
-  border: 4px solid #000;
-  border-radius: 50%;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pole {
-  width: 4px;
-  height: 90px;
-  background-color: #9ca3af;
-  margin: 0 auto;
-  position: relative;
-  top: -4px;
-}
-
-.station-text {
-  margin-top: 6px;
-  font-size: 14px;
-}
-
-.station-text a {
-  color: white;
-  text-decoration: none;
-}
-
- </style>
+  .roadmap-image {
+    position: absolute;
+    top: 270px;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 1000px;
+  }
 
 
+  .moving-truck {
+    position: absolute;
+    top: 330px; 
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url('/assets/images/mytruck.svg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: truckMove 10s linear infinite;
+    z-index: 10;
+    
+  }
+
+  @keyframes truckMove {
+    0% { left: -10%; }
+    100% { left: 80%; }
+  }
+
+  .stage-labels {
+    position: absolute;
+    top: 425px;
+    left: 37%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 3rem;
+    color: white;
+    font-family: 'BYekan', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
+    justify-content: center;
+    direction: ltr;
+  }
+
+  .stage {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    min-width: 120px;
+  }
+
+  .stage-popup {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    font-size: 13px;
+    z-index: 10;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .stage:hover .stage-popup {
+    display: block;
+  }
+
+  .stage-popup a {
+    display: block;
+    text-decoration: none;
+    color: #2563eb;
+    margin-bottom: 4px;
+  }
+</style>
+
+<div class="roadmap-container">
+
+  <div class="moving-truck"></div>
 
 
-<div class="roadmap">
-  <div class="truck"></div>
-  <div class="road"></div>
+  <img src="/assets/images/trc.svg" alt="نقشه راه" class="roadmap-image" />
 
-  <!-- ایستگاه ۱ -->
-  <div class="station" style="left: 8%;">
-    <div class="circle">۱</div>
-    <div class="pole"></div>
-    <div class="station-text"><a href="/Prerequisites/">پیش‌نیازها</a></div>
-  </div>
 
-  <!-- ایستگاه ۲ -->
-  <div class="station" style="left: 28%;">
-    <div class="circle">۲</div>
-    <div class="pole"></div>
-    <div class="station-text"><a href="/Pricing/">استعلام قیمت</a></div>
-  </div>
-
-  <!-- ایستگاه ۳ -->
-  <div class="station" style="left: 48%;">
-    <div class="circle">۳</div>
-    <div class="pole"></div>
-    <div class="station-text"><a href="/Orders/CreateOrder/">ثبت سفارش</a></div>
-  </div>
-
-  <!-- ایستگاه ۴ -->
-  <div class="station" style="left: 68%;">
-    <div class="circle">۴</div>
-    <div class="pole"></div>
-    <div class="station-text"><a href="/Orders/OrderLable/">لیبل و فاکتور</a></div>
-  </div>
-
-  <!-- ایستگاه ۵ -->
-  <div class="station" style="left: 88%;">
-    <div class="circle">۵</div>
-    <div class="pole"></div>
-    <div class="station-text"><a href="/Orders/OrderStatus/">مدیریت سفارشات</a></div>
+  <div class="stage-labels">
+    <div class="stage">
+      پیش‌نیازها
+      <div class="stage-popup">
+        <a href="/Tokens/#getToken">توکن و فروشگاه</a>
+        <a href="/ProvinceAndCitiesList/#getProvinceList">استان‌ها</a>
+        <a href="/ProvinceAndCitiesList/#getCitiesList">شهرها</a>
+        <a href="/Orders/CreateOrder/#packagesList">بسته‌های پستی</a>
+        <a href="/Orders/OrderGuide/#order_type">نوع سفارش</a>
+      </div>
+    </div>
+    <div class="stage">
+      استعلام قیمت
+      <div class="stage-popup">
+        <a href="/PriceCheck/">محاسبه هزینه</a>
+      </div>
+    </div>
+    <div class="stage">
+      ثبت سفارش
+      <div class="stage-popup">
+        <a href="/Orders/CreateOrder/#createOrder">ارسال سفارش</a>
+      </div>
+    </div>
+    <div class="stage">
+      لیبل و فاکتور
+      <div class="stage-popup">
+        <a href="/Orders/OrderLable/#orderLable">دریافت لیبل</a>
+        <a href="/Orders/OrderLable/#lableWithDate">دریافت فاکتور</a>
+      </div>
+    </div>
+    <div class="stage">
+      مدیریت سفارشات
+      <div class="stage-popup">
+        <a href="/Orders/OrderStatus/#changeOrderStatus">تغییر وضعیت</a>
+        <a href="/Orders/OrderDetail/#orderDetails">جزییات سفارش</a>
+        <a href="/Orders/OrderDetail/#orderList">لیست سفارشات</a>
+      </div>
+    </div>
   </div>
 </div>
-
-
 
 
 <!-- ---
