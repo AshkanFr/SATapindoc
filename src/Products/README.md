@@ -37,11 +37,17 @@ sidebarDepth: 2
   <tbody>
     <tr>
       <td>string</td>
-      <td>شناسه فروشگاه</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه فروشگاه
+      </a></td>
       <td>false</td>
       <td>false</td>
       <td>true</td>
-      <td>shop_id</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        shop_id
+      </a></td>
     </tr>
     <tr>
       <td>string</td>
@@ -153,11 +159,17 @@ sidebarDepth: 2
   <tbody>
     <tr>
       <td>string</td>
-      <td>شناسه فروشگاه</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه فروشگاه
+      </a></td>
       <td>false</td>
       <td>false</td>
       <td>true</td>
-      <td>shop_id</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        shop_id
+      </a></td>
     </tr>
     <tr>
       <td>int</td>
@@ -280,11 +292,17 @@ sidebarDepth: 2
   <tbody>
     <tr>
       <td>string</td>
-      <td>شناسه فروشگاه</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه فروشگاه
+      </a></td>
       <td>false</td>
       <td>false</td>
       <td>true</td>
-      <td>shop_id</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        shop_id
+      </a></td>
     </tr>
     <tr>
       <td>int</td>
@@ -379,11 +397,17 @@ sidebarDepth: 2
     </tr>
     <tr>
       <td>str</td>
-      <td>شناسه فروشگاه</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         شناسه فروشگاه
+      </a></td>
       <td>false</td>
       <td>false</td>
       <td>true</td>
-      <td>shop_id</td>
+      <td><a class="linktoguide" href="/Shops/#getShopsList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+        shop_id
+      </a></td>
     </tr>
     <tr>
       <td>int</td>

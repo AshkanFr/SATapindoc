@@ -174,7 +174,13 @@ sidebarDepth: 2
     <tr><td>str</td><td>محل تولد</td><td>false</td><td>false</td><td>birthday_location</td></tr>
     <tr><td>str</td><td>کد ملی</td><td>false</td><td>false</td><td>national_code</td></tr>
     <tr><td>str</td><td>آدرس</td><td>false</td><td>false</td><td>address</td></tr>
-    <tr><td>int</td><td>کد استان</td><td>false</td><td>false</td><td>province</td></tr>
+    <tr><td>int</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getProvinceList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         کد استان
+      </a></td><td>false</td><td>false</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getProvinceList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         province
+      </a></td></tr>
     <tr><td>int</td><td>شهر</td><td>false</td><td>false</td><td>city</td></tr>
     <tr><td>str</td><td>کد پستی</td><td>false</td><td>false</td><td>postal_code</td></tr>
     <tr><td>str</td><td>واحد</td><td>false</td><td>false</td><td>unit</td></tr>
@@ -308,8 +314,17 @@ sidebarDepth: 2
     <tr><td>str</td><td>نام فروشگاه</td><td>false</td><td>false</td><td>title</td></tr>
     <tr><td>str</td><td>پیام فروشگاه</td><td>false</td><td>false</td><td>shop_message</td></tr>
     <tr><td>str</td><td>ساعات پاسخگویی</td><td>false</td><td>false</td><td>available_hours</td></tr>
-    <tr><td>int</td><td>کد استان</td><td>false</td><td>false</td><td>province_code</td></tr>
-    <tr><td>int</td><td>کد شهرستان</td><td>false</td><td>false</td><td>city_code</td></tr>
+    <tr><td>int</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getProvinceList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         کد استان
+      </a></td><td>false</td><td>false</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getProvinceList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         Province_code
+      </a></td></tr>
+    <tr><td>int</td><td><a class="linktoguide" href="/ProvinceAndCitiesList/#getCitiesList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         کد شهرستان
+      </a></td><td>false</td><td>false</td><td>city_code</td></tr>
     <tr><td>str</td><td>آدرس</td><td>false</td><td>false</td><td>address</td></tr>
     <tr><td>int</td><td>کد پستی</td><td>false</td><td>false</td><td>postal_code</td></tr>
     <tr><td>str</td><td>شماره تماس</td><td>false</td><td>false</td><td>phone</td></tr>

@@ -441,19 +441,31 @@ sidebarDepth: 2
     </tr>
     <tr>
       <td>int</td>
-      <td>کد شهرستان</td>
+      <td><a class="linktoguide" href="/ProvinceAndCitiesList/#getCitiesList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         کد شهرستان
+      </a></td>
       <td>false</td>
       <td>false</td>
       <td>false</td>
-      <td>city_code</td>
+      <td><a class="linktoguide" href="/ProvinceAndCitiesList/#getCitiesList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         city_code
+      </a></td>
     </tr>
     <tr>
       <td>int</td>
-      <td>کد استان</td>
+      <td><a class="linktoguide" href="/ProvinceAndCitiesList/#getProvinceList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         کد استان
+      </a></td>
       <td>false</td>
       <td>false</td>
       <td>false</td>
-      <td>province_code</td>
+      <td><a class="linktoguide" href="/ProvinceAndCitiesList/#getProvinceList">
+         <img src="/assets/images/icons8-external-link-96.png" alt="link icon" class="link-icon" />
+         province_code
+      </a></td>
     </tr>
     <tr>
       <td>str</td>
