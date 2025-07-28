@@ -101,20 +101,24 @@
         <a href="/Tokens/#getToken">توکن و فروشگاه</a>
         <a href="/ProvinceAndCitiesList/#getProvinceList">استان‌ها</a>
         <a href="/ProvinceAndCitiesList/#getCitiesList">شهرها</a>
+         <a href="/Orders/CreateOrder/#kioskList">کیوسک‌های جابار</a>
         <a href="/Orders/CreateOrder/#packagesList">بسته‌های پستی</a>
+         <a href="/Orders/OrderGuide/#pay_type">نوع پرداخت</a>
         <a href="/Orders/OrderGuide/#order_type">نوع سفارش</a>
+          <a href="/Orders/OrderGuide/#register_type">نوع ثبت سفارش</a>
+            <a href="/Orders/OrderGuide/#content_type">نوع محتوای سفارش</a>
       </div>
     </div>
     <div class="stage">
       استعلام قیمت
       <div class="stage-popup">
-        <a href="/PriceCheck/">محاسبه هزینه</a>
+        <a href="/PriceCheck/">استعلام قیمت</a>
       </div>
     </div>
     <div class="stage">
       ثبت سفارش
       <div class="stage-popup">
-        <a href="/Orders/CreateOrder/#createOrder">ارسال سفارش</a>
+        <a href="/Orders/CreateOrder/#createOrder">ثبت سفارش</a>
       </div>
     </div>
     <div class="stage">
@@ -127,9 +131,9 @@
     <div class="stage">
       مدیریت سفارشات
       <div class="stage-popup">
-        <a href="/Orders/OrderStatus/#changeOrderStatus">تغییر وضعیت</a>
-        <a href="/Orders/OrderDetail/#orderDetails">جزییات سفارش</a>
         <a href="/Orders/OrderDetail/#orderList">لیست سفارشات</a>
+        <a href="/Orders/OrderDetail/#orderDetails">جزییات سفارش</a>
+        <a href="/Orders/OrderStatus/#changeOrderStatus">تغییر وضعیت و حذف سفارش</a>
       </div>
     </div>
   </div>
